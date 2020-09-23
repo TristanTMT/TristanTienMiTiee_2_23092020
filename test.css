@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.main-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-navbar ul {
+    margin: 1em 0 .5em;
+    text-align: center;
+}
+
+.main-navbar li {
+    display: inline;
+}
+
+.main-navbar a {
+	display: inline-block;
+	padding: .5em 1.5em;
+}
+
+.item {
+    font-weight: 900;
+}
+
+@media (max-width: 700px) {
+	.main-header .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+	}
+}
+
+
+/* Header */
+
+
+
+/* Navigation */
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 15px;
+}
+
+
+nav a {
+    font-size: 1.3em;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+.hebergement-marseille {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.hebergement-images {
+    flex: 1 1 auto;
+}
+
+.aside-container {
+    order: 1;
+}
+
+/* Footer */
+
+footer {
+    background: #F2F2F2;
+    padding: 10px;
+}
+
+#container-footer {
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 12px;
+}
+
+footer #container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#container-footer ul {
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.copy-footer {
+    display: flex;
+    justify-content: center;
+}
