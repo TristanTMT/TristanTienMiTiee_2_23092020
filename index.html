@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="#">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <meta name="description" content="#">
 </head>
 <body>
@@ -29,16 +30,38 @@
         </header>
 
         
-       
+        <!-- Section Title -->
+        <section id="title">
+            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1><br>
+            <p>En plein centre ville ou en pleine nature</p>
+        </section>
+
+
        <!-- Section Bouton de recherche -->
-        <div id="btn">
-            <button class="btn-research"></button>
-        </div>
+        <section id="container-btn">
+            <form>
+                <input type="text" placeholder="Marseille, France">
+                <button class="research-btn">Rechercher</button>
+            </form>
+        </section>
+
 
        <!-- Section Filtre -->
-        <div id="filter">
+        <section id="filter">
+            <p><strong>Filtres</strong></p>
+            <div class="filter-btn">
+                <button>Economique</button>
+                <button>Familial</button>
+                <button>Romantique</button>
+                <button>Animaux autorisés</button>
+            </div>
+        </section>
 
-        </div>
+        <!-- Section Title -->
+        <section id="filter-info">
+            <p><span>Image i</span><i class="far fa-eye"></i>Plus de 500 logements disponibles dans cette ville</p>
+        </section>
+
 
        <!-- Section Hébergement à Marseille -->
         <section class="container-hebergement">
@@ -53,8 +76,29 @@
                             <div class="card-body">
                                 <p>Hello</p>
                             </div>
+                            <div class="container-star-rating">
+                                <div class="star-rating">
+                                    <input type="radio" name="rating1" id="rating1">
+                                    <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating2" id="rating2">
+                                    <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating3" id="rating3">
+                                    <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating4" id="rating4">
+                                    <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating5" id="rating5">
+                                    <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                            </div>
                         </div>
-                        <div class="btn-stars"></div>
                     </div>
 
                     <div class="card-hebergement">
@@ -64,6 +108,28 @@
                             <div class="card-body">
                                 <p>Hello</p>
                             </div>
+                            <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
                         </div>
                         <div class="btn-stars"></div>
                     </div>
@@ -75,16 +141,27 @@
                             <div class="card-body">
                                 <p>Hello</p>
                             </div>
-                        </div>
-                        
-                        <div class="btn-stars"></div>
-                    </div>
-                    <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
-                        <div class="card-title">
-                            <h4>Hôtel tout Bleu et Blanc</h4>
-                            <div class="card-body">
-                                <p>Hello</p>
+                            <div class="container-star-rating">
+                                <div class="star-rating">
+                                    <input type="radio" name="rating1" id="rating1">
+                                    <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating2" id="rating2">
+                                    <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating3" id="rating3">
+                                    <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating4" id="rating4">
+                                    <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                </div>
+                                <div class="star-rating">
+                                    <input type="radio" name="rating5" id="rating5">
+                                    <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                </div>
                             </div>
                         </div>
                         
@@ -97,6 +174,28 @@
                             <div class="card-body">
                                 <p>Hello</p>
                             </div>
+                            <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
                         </div>
                         
                         <div class="btn-stars"></div>
@@ -108,13 +207,69 @@
                             <div class="card-body">
                                 <p>Hello</p>
                             </div>
+                            <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
                         </div>
                         
                         <div class="btn-stars"></div>
                     </div>
-
+                    <div class="card-hebergement">
+                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                        <div class="card-title">
+                            <h4>Hôtel tout Bleu et Blanc</h4>
+                            <div class="card-body">
+                                <p>Hello</p>
+                            </div>
+                            <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="btn-stars"></div>
+                    </div>
                 </aside>
+                <p><strong>Afficher plus</strong></p>
             </div>
+            <!-- END -->
                
                 <!-- Section Plus Populaires -->
                 <div class="aside-container">
@@ -128,6 +283,28 @@
                                 <div class="card-body">
                                     <p>Hello</p>
                                 </div>
+                                <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
                             </div>
                             <div class="btn-stars"></div>
                         </div>
@@ -138,6 +315,28 @@
                                 <h4>Au coeur de l'eau </br> Chambres d'hôtes</h4>
                                 <div class="card-body">
                                     <p>Hello</p>
+                                </div>
+                                <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="btn-stars"></div>
@@ -150,6 +349,28 @@
                                 <div class="card-body">
                                     <p>Hello</p>
                                 </div>
+                                <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
                             </div>
                             
                             <div class="btn-stars"></div>
@@ -158,72 +379,55 @@
                     </aside>
                 </div>         
         </section>
+        <!-- END -->
 
-           <!-- Section Activités à Marseille  -->
-        <section class="activites-marseille">
-        <div class="activite-images">
-            <h2>Activités à Marseille</h2>
-            <a class="" href="images/activites/"><img src="images/activites/" alt="Vieux Port"/>
-                <div class="label">
-                    <aside class="label-text">
-                        <span class="text-title"><strong>Vieux Port</strong></span> <br><span class="legend-pics">UI Design</span>
-                            <i class="far fa-eye"></i>									  
-                    </aside>
+        <!-- Section Activités à Marseille  -->
+        <section id="container-activites-marseille">
+            <div class="activities">
+                <h2>Activités à Marseille</h2>
+                <div class="grid-activities">
+                    <div id="box-1">
+                    <div class="card-grid">
+                        <a class="" href="images/activites/4_small/vieux_port.jpg"><img src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port"/></a>
+                        <div class="card-title">Vieux Port</div>
+                    </div>
+                    </div>
+                    <div class="box-2">
+                    <div class="card-grid">
+                        <div><a class="" href="images/activites/4_small/fort_de_pomègues.jpg"><img src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues"/></div>
+                        <div class="card-title">Fort de Pomègues</div>
+                    </div>
+                    <div class="card-grid">
+                        <div><a class="" href="images/activites/4_small/iles_du_frieul.jpg"><img src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul"/></a></div>
+                        <div class="card-title">Iles du Frioul</div>
+                    </div>
+                    </div>
+                    <div id="box-1">
+                    <div class="card-grid">
+                        <div><a class="" href="images/activites/4_small/parc_national_des_calanques.jpg"><img src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques"/></a></div>
+                        <div class="card-title">Parc National des Calanques</div>
+                    </div>
+                    </div>
+                    <div class="box-2">
+                    <div class="card-grid">
+                        <div><a class="" href="images/activites/4_small/notre_dame_de_la_garde.jpg"><img src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde"/></a></div>
+                        <div class="card-title">Notre-Dame-de-la-Garde</div>
+                    </div>
+                    <div class="card-grid">
+                        <div><a class="" href="images/activites/4_small/parc_longchamp.jpg"><img src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp"/></a></div>
+                        <div class="card-title">Parc Longchamp</div>
+                    </div>
+                    </div>
                 </div>
-            </a>	
-            
-            <a class="" href="images/activites/"><img src="images/activites/" alt="Fort de Pomègues"/>
-                <div class="label">
-                    <aside class="label-text">
-                        <span class="text-title"><strong>Fort de Pomègues</strong></span> <br><span class="legend-pics">UI & UX Design</span>
-                            <i class="far fa-eye"></i>									  
-                    </aside>
-                </div>
-            </a>	
-            
-            <a  class="" href="images/activites/"><img src="images/activites/" alt="Iles du Frieul"/>
-                <div class="label">
-                    <aside class="label-text">
-                        <span class="text-title"><strong>Iles du Frieul</strong></span> <br><span class="legend-pics">SEO & UX Design</span>
-                            <i class="far fa-eye"></i>									  
-                    </aside>
-                </div>
-            </a>	
-            
-            <a class="" href="images/activites/"><img src="images/activites/" alt="Parc National des Calanques"/>
-                <div class="label">
-                    <aside class="label-text">
-                        <span class="text-title"><strong>Parc National des Calanques</strong></span> <br><span class="legend-pics">UI & UX Design</span>
-                            <i class="far fa-eye"></i>									  
-                    </aside>
-                </div>
-            </a>	
-            
-            <a  class="" href="images/activites/"><img src="images/activites/" alt="Notre Dame de la Garde"/>
-                <div class="label">
-                    <aside class="label-text">
-                        <span class="text-title"><strong>Notre Dame de la Garde</strong></span> <br><span class="legend-pics">SEO</span>
-                            <i class="far fa-eye"></i>									  
-                    </aside>
-                </div>
-            </a>	
-            
-            <a class="" href="images/activites/"><img src="images/activites/" alt="Parc Longchamp"/>
-                <div class="label">
-                    <aside class="label-text">
-                        <span class="text-title"><strong>Parc Longchamp</strong></span> <br><span class="legend-pics">SEO & UI Design</span>
-                            <i class="far fa-eye"></i>									  
-                    </aside>
-                </div>
-            </a>
-        </div>
-        </section> 
+            </div>
+        </section>
+        <!-- END -->
        
         <footer>
             <div id="container-footer">
                 <div class="a-propos">
                     <ul>
-                        <h2 class="title-footer">A propos</h2>
+                        <li><h2 class="title-footer">A propos</h2></li>
                         <li>Fonctionnement du site</li>
                         <li>Conditions générales de vente</li>
                         <li>Données et confidentialité</li>
@@ -231,14 +435,14 @@
                 </div>
                 <div class="nos-hebergements">
                     <ul>
-                        <h2 class="title-footer">Nos hébergements</h2>
+                        <li><h2 class="title-footer">Nos hébergements</h2></li>
                         <li>Charte qualité</li>
                         <li>Soumettre votre hôtel</li>
                     </ul>
                 </div>
                 <div class="assistance">
                     <ul>
-                        <h2 class="title-footer">Assistance</h2>
+                        <li><h2 class="title-footer">Assistance</h2></li>
                         <li>Nous contacter</li>
                         <li>Centre d'aide</li>
                     </ul>
@@ -249,6 +453,8 @@
                 <p>Tout droit réservé by &copy;Tristan Tien-Mi-Tiee 2020</p>
             </div>
         </footer>
+        <!-- END -->
     </div>
+
 </body>
 </html>
