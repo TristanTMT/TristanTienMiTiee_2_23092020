@@ -20,14 +20,15 @@
 
                 <nav class="main-navbar">
                     <ul class="navbar">
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="#services">Hébergements</a></li>
-                        <li><a href="#">Activités</a></li>
-                        <li><a class="item" href="#contact">S'inscrire</a></li>
+                        <li><a href="#container-hebergement">Hébergements</a></li>
+                        <li><a href="#container-activites-marseille">Activités</a></li>
+                        <li><a class="item" href="#">S'inscrire</a></li>
                     </ul>
                 </nav>
                 </div>
         </header>
+
+        <br>
 
         
         <!-- Section Title -->
@@ -39,10 +40,11 @@
 
        <!-- Section Bouton de recherche -->
         <section id="container-btn">
-            <form>
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
                 <input type="text" placeholder="Marseille, France">
                 <button class="research-btn">Rechercher</button>
-            </form>
+            </div>
         </section>
 
 
@@ -50,31 +52,51 @@
         <section id="filter">
             <p><strong>Filtres</strong></p>
             <div class="filter-btn">
+                <a class="filter-icon">
+                    <i class="fas fa-money-bill-wave"></i>
+                </a>
                 <button>Economique</button>
+            </div>
+            <div class="filter-btn">
+                <div class="filter-icon">
+                    <i class="fas fa-child"></i>
+                </div>
                 <button>Familial</button>
+            </div>
+            <div class="filter-btn">
+                <div class="filter-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
                 <button>Romantique</button>
+            </div>
+            <div class="filter-btn">
+                <div class="filter-icon">
+                    <i class="fas fa-dog"></i>
+                </div>
                 <button>Animaux autorisés</button>
             </div>
         </section>
 
         <!-- Section Title -->
-        <section id="filter-info">
-            <p><span>Image i</span><i class="far fa-eye"></i>Plus de 500 logements disponibles dans cette ville</p>
+        <section id="chart-info">
+            <span><i class="fas fa-info"></i></span>
+            <p>Plus de 500 logements disponibles dans cette ville</p>
         </section>
 
 
        <!-- Section Hébergement à Marseille -->
-        <section class="container-hebergement">
+        <section id="container-hebergement" class="container-hebergement">
             <div class="hebergement">
-                <h2>Hébergement-marseille</h2>
+                <h2>Hébergement à Marseille</h2>
                 <aside class="hebergement-image">
 
                     <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                        <a href="#">
+                        <div class="card-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                         <div class="card-title">
                             <h4>Hôtel Le soleil du matin</h4>
                             <div class="card-body">
-                                <p>Hello</p>
+                                <p>Nuit à partir de <strong>25€</strong></p>
                             </div>
                             <div class="container-star-rating">
                                 <div class="star-rating">
@@ -100,13 +122,16 @@
                             </div>
                         </div>
                     </div>
+                    </a>
 
+                    <a href="#">
                     <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                        
+                        <div class="card-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                         <div class="card-title">
                             <h4>Au coeur de l'eau </br> Chambres d'hôtes</h4>
                             <div class="card-body">
-                                <p>Hello</p>
+                                <p>Nuit à partir de <strong>52€</strong></p>
                             </div>
                             <div class="container-star-rating">
                                     <div class="star-rating">
@@ -131,15 +156,16 @@
                                     </div>
                                 </div>
                         </div>
-                        <div class="btn-stars"></div>
                     </div>
+                    </a>
 
                     <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                        <a href="#"></a>
+                        <div class="card-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                         <div class="card-title">
                             <h4>Hôtel tout Bleu et Blanc</h4>
                             <div class="card-body">
-                                <p>Hello</p>
+                                <p>Nuit à partir de <strong>76€</strong></p>
                             </div>
                             <div class="container-star-rating">
                                 <div class="star-rating">
@@ -168,11 +194,45 @@
                         <div class="btn-stars"></div>
                     </div>
                     <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                        <a href="#"></a>
+                        <div class="card-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                         <div class="card-title">
                             <h4>Hôtel tout Bleu et Blanc</h4>
                             <div class="card-body">
-                                <p>Hello</p>
+                                <p>Nuit à partir de <strong>46€</strong></p>
+                            </div>
+                            <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <div class="card-hebergement">
+                        <a href="#"></a>
+                        <div class="card-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
+                        <div class="card-title">
+                            <h4>Hôtel tout Bleu et Blanc</h4>
+                            <div class="card-body">
+                                <p>Nuit à partir de <strong>23€</strong></p>
                             </div>
                             <div class="container-star-rating">
                                     <div class="star-rating">
@@ -201,11 +261,12 @@
                         <div class="btn-stars"></div>
                     </div>
                     <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                        <a href="#">
+                        <div class="card-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                         <div class="card-title">
                             <h4>Hôtel tout Bleu et Blanc</h4>
                             <div class="card-body">
-                                <p>Hello</p>
+                                <p>Nuit à partir de <strong>96€</strong></p>
                             </div>
                             <div class="container-star-rating">
                                     <div class="star-rating">
@@ -230,41 +291,7 @@
                                     </div>
                                 </div>
                         </div>
-                        
-                        <div class="btn-stars"></div>
-                    </div>
-                    <div class="card-hebergement">
-                        <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
-                        <div class="card-title">
-                            <h4>Hôtel tout Bleu et Blanc</h4>
-                            <div class="card-body">
-                                <p>Hello</p>
-                            </div>
-                            <div class="container-star-rating">
-                                    <div class="star-rating">
-                                        <input type="radio" name="rating1" id="rating1">
-                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
-                                    </div>
-                                    <div class="star-rating">
-                                        <input type="radio" name="rating2" id="rating2">
-                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
-                                    </div>
-                                    <div class="star-rating">
-                                        <input type="radio" name="rating3" id="rating3">
-                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
-                                    </div>
-                                    <div class="star-rating">
-                                        <input type="radio" name="rating4" id="rating4">
-                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
-                                    </div>
-                                    <div class="star-rating">
-                                        <input type="radio" name="rating5" id="rating5">
-                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
-                                    </div>
-                                </div>
-                        </div>
-                        
-                        <div class="btn-stars"></div>
+                        </a>
                     </div>
                 </aside>
                 <p><strong>Afficher plus</strong></p>
@@ -273,15 +300,19 @@
                
                 <!-- Section Plus Populaires -->
                 <div class="aside-container">
-                    <h2>Les plus populaires</h2>
+                    <div class="popular-and-chart">
+                        <h2>Les plus populaires</h2>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
                     <aside class="aside-image">
 
                         <div class="card">
-                            <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                            <a href="#">
+                            <div class="card-popular-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                             <div class="card-title">
                                 <h4>Hôtel Le soleil du matin</h4>
                                 <div class="card-body">
-                                    <p>Hello</p>
+                                    <p>Nuit à partir de <strong>128€</strong></p>
                                 </div>
                                 <div class="container-star-rating">
                                     <div class="star-rating">
@@ -306,15 +337,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-stars"></div>
+                            </a>
                         </div>
 
                         <div class="card">
-                            <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                            <a href="#"></a>
+                            <div class="card-popular-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                             <div class="card-title">
                                 <h4>Au coeur de l'eau </br> Chambres d'hôtes</h4>
                                 <div class="card-body">
-                                    <p>Hello</p>
+                                    <p>Nuit à partir de <strong>71€</strong></p>
                                 </div>
                                 <div class="container-star-rating">
                                     <div class="star-rating">
@@ -343,11 +375,12 @@
                         </div>
 
                         <div class="card">
-                            <div class="card-image"><a href="images/"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></a></div>
+                            <a href="#"></a>
+                            <div class="card-popular-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
                             <div class="card-title">
                                 <h4>Hôtel tout Bleu et Blanc</h4>
                                 <div class="card-body">
-                                    <p>Hello</p>
+                                    <p>Nuit à partir de <strong>68€</strong></p>
                                 </div>
                                 <div class="container-star-rating">
                                     <div class="star-rating">
@@ -381,47 +414,59 @@
         </section>
         <!-- END -->
 
+        <br>
+
         <!-- Section Activités à Marseille  -->
         <section id="container-activites-marseille">
             <div class="activities">
                 <h2>Activités à Marseille</h2>
                 <div class="grid-activities">
-                    <div id="box-1">
+
+                    <div class="card-grid a">
+                        <a class="" href="#">
+                            <div class="card-grid-img box-1"><img src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port"/></div>
+                        
+                            <h4 class="card-title">Vieux Port</h4>
+                        </a>
+                    </div>
+
+                    <div class="box-2">
+                    <div class="card-grid 2">
+                        <div class="card-grid-img box-2"><a class="" href="#"><img src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues"/></div>
+                        <h4 class="card-title">Fort de Pomègues</h4>
+                        </a>
+                    </div>
                     <div class="card-grid">
-                        <a class="" href="images/activites/4_small/vieux_port.jpg"><img src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port"/></a>
-                        <div class="card-title">Vieux Port</div>
+                        <div class="card-grid-img box-2"><a class="" href="#"><img src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul"/></div>
+                        <h4 class="card-title">Iles du Frioul</h4>
+                        </a>
                     </div>
                     </div>
+
+                    <div class="card-grid">
+                        <div class="card-grid-img box-1"><a class="" href="#"><img src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques"/></div>
+                        <h4 class="card-title">Parc National des Calanques</h4>
+                        </a>
+                    </div>
+
                     <div class="box-2">
                     <div class="card-grid">
-                        <div><a class="" href="images/activites/4_small/fort_de_pomègues.jpg"><img src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues"/></div>
-                        <div class="card-title">Fort de Pomègues</div>
+                        <div class="card-grid-img box-2"><a class="" href="#"><img src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde"/></a></div>
+                        <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
                     </div>
                     <div class="card-grid">
-                        <div><a class="" href="images/activites/4_small/iles_du_frieul.jpg"><img src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul"/></a></div>
-                        <div class="card-title">Iles du Frioul</div>
-                    </div>
-                    </div>
-                    <div id="box-1">
-                    <div class="card-grid">
-                        <div><a class="" href="images/activites/4_small/parc_national_des_calanques.jpg"><img src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques"/></a></div>
-                        <div class="card-title">Parc National des Calanques</div>
-                    </div>
-                    </div>
-                    <div class="box-2">
-                    <div class="card-grid">
-                        <div><a class="" href="images/activites/4_small/notre_dame_de_la_garde.jpg"><img src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde"/></a></div>
-                        <div class="card-title">Notre-Dame-de-la-Garde</div>
-                    </div>
-                    <div class="card-grid">
-                        <div><a class="" href="images/activites/4_small/parc_longchamp.jpg"><img src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp"/></a></div>
-                        <div class="card-title">Parc Longchamp</div>
+                        <a class="" href="#">
+                        <div class="card-grid-img box-2"><img src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp"/></div>
+                        <h4 class="card-title">Parc Longchamp</h4>
+                        </a>
                     </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- END -->
+
+        <br>
        
         <footer>
             <div id="container-footer">
