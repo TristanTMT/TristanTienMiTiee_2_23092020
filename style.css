@@ -6,29 +6,31 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 10px;
 }
 
-.container {
-    margin: 0 auto;
-    max-width: 100%;
-    padding: 10px;
-    font-size: 12px;
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
-.main-header .container {
+/* Header */
+
+.container-header .row-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    font-size: 12px;
+}
+
+#logo{
+    display: flex;
+    align-items: left;
 }
 
 .main-navbar ul {
-    margin: 1em 0 .5em;
     text-align: center;
-}
-
-.main-navbar li {
-    display: inline;
 }
 
 .main-navbar a {
@@ -40,17 +42,6 @@ body{
     font-weight: 900;
 }
 
-@media (max-width: 700px) {
-	body {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-	}
-}
-
-
-/* Header */
-
 
 
 /* Navigation */
@@ -60,9 +51,7 @@ body{
     display: flex;
 }
 
-.navbar li {
-    margin-right: 15px;
-}
+
 
 
 nav a {
@@ -73,32 +62,32 @@ nav a {
 
 /* Bouton */
 
-#container-btn{
-    
+#container-btn div{
+    display: flex;
+    align-items: center;     
 }
 
-input{
-    position: relative;
-    display: inline-block;
-    font-size: 12px;
+#container-btn div i{
+    display: flex;
+    align-items: center;
+    background:  #F2F2F2;
+    height: 35px;
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type="text"]{
+    font-size: 15px;
     box-sizing: border-box;
-}
-
-input[type="text"] {
-    background: #fff;
-    width: 150px;
     height: 35px;
     border: solid 1px #F2F2F2;
-    border-radius: 25px 0 0 25px;
 }
 
 .research-btn {
     background: #0065FC;
     color: #fff;
-    width: 75px;
-    height: 35px;
-    margin: -5px;
-    outline: none;
+    width: 100px;
+    height: 35px; 
     border: none;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
@@ -109,25 +98,49 @@ input[type="text"] {
     display: flex;
     align-items: center;
     margin-left: 30px;
+}
+
+.filter-btn{
+    display: flex;
+    border-radius: 25px;  
+    border: solid 3px #F2F2F2;
+    color: #0065FC;
+}
+
+.filter-btn .filter-icon {
+    border-radius: 100%;
+    background: #DEEBFF;
+    text-align: center;
+    border: solid 4px #F2F2F2;
+    padding: 10px;  
+    cursor: pointer;
+}
+.filter-btn button {
+    border-radius: 25px;
+    border: none;
+    padding: 10px;   
+    background: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.filter-btn:hover{
     
 }
 
-.filter-btn button {
-    border-radius: 25px;
-    width: auto;
-    background: white;
-    color: black;
-    font-weight: bold;
-    border: solid 3px #F2F2F2;
-    padding: 10px;
-    margin-left: 70px;
-    cursor: pointer;
-    transition: 0.5s;
+/* Chart Info */
+#chart-info{
+    display: flex;
+    align-items: center;
+    margin: 20px;
 }
-
-.filter-btn button:hover {
-    background: #0065FC;
-    color: white;
+#chart-info span{
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    padding: 10px;
+    color: #0065FC;
+    font-size: 11px;
+    margin-right: 8px;
 }
 
 /* Boutons en étoile */
@@ -147,6 +160,12 @@ input[type="text"] {
     font-size: 11px;
     cursor: pointer;
 }
+.container-star-rating i[data-active="false"] {
+    color: grey;
+}
+.container-star-rating i[data-active="true"] {
+    color: blue;
+}
 
 /* Hébergement */
 
@@ -154,29 +173,20 @@ input[type="text"] {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    
 }
 
 .hebergement{
     flex-wrap: wrap;
     background:  #F2F2F2;
     border-radius: 20px;
-    width: 70%;
+    width: 65%;
 }
-
 
 .hebergement-image{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-bottom: 30px;
-    padding: 10px;
-}
-
-div img{
-    background-size: auto;
-    max-height: 100%;
-    width: 100%;
-    border-radius: 20px;
 }
 
 .card-hebergement{
@@ -190,7 +200,27 @@ div img{
     margin-left: 30px;
 }
 
+.card-image img{
+    
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.card-image {
+    object-fit: cover;
+}
+
 /* Les plus populaires */
+
+.popular-and-chart{
+    display: flex;
+    align-items: center;
+}
+.popular-and-chart i{
+    justify-content: flex-end;
+}
 
 .aside-container{
     background: #F2F2F2;
@@ -201,7 +231,7 @@ div img{
     flex-direction: column;
     align-items: center;
     border-radius: 20px;
-    width: 25%;
+    width: 30%;
 }
 .aside-image{
     text-align: center;
@@ -214,8 +244,15 @@ div img{
     border-radius: 20px;
     margin-bottom: 30px;
     padding: 5px;
-    width: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.card .card-popular-image img{
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+    height: 100%;
+    width: 150px;
 }
 
 .card-title{
@@ -225,32 +262,48 @@ div img{
 
 /* GRID Activité */
 
+#container-activites-marseille{
+    display: flex;
+    justify-content: center;  
+}
+
 .grid-activities{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .card-grid {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     background: white;
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 30px;
-    width: 250px;
+    margin-bottom: 20px;
+    width: 300px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     margin-left: 30px;
 }
 
-#box-1 .card-grid img{
-    height: 500px;
+
+.card-grid .box-1{
+    height: 500px;  
+    object-fit: cover;
+}
+.card-grid .box-2{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
 }
 
-#box-2 .card-grid{
-    display: flex;
-    flex-wrap: wrap;
+.card-grid img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
+
+
+
 
 
 /* Footer */
