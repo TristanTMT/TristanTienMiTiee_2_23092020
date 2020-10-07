@@ -60,6 +60,9 @@ nav a {
     text-decoration: none;
 }
 
+/* Description */
+
+
 /* Bouton */
 
 #container-btn div{
@@ -97,7 +100,7 @@ input[type="text"]{
 #filter {
     display: flex;
     align-items: center;
-    margin-left: 30px;
+    
 }
 
 .filter-btn{
@@ -105,6 +108,7 @@ input[type="text"]{
     border-radius: 25px;  
     border: solid 3px #F2F2F2;
     color: #0065FC;
+    margin-left: 50px;
 }
 
 .filter-btn .filter-icon {
@@ -118,7 +122,7 @@ input[type="text"]{
 .filter-btn button {
     border-radius: 25px;
     border: none;
-    padding: 10px;   
+    padding: 15px;
     background: white;
     transition: 0.5s;
     cursor: pointer;
@@ -132,8 +136,9 @@ input[type="text"]{
 #chart-info{
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin-top: 25px;
 }
+
 #chart-info span{
     border: 2px solid #F2F2F2;
     border-radius: 100%;
@@ -172,17 +177,20 @@ input[type="text"]{
 .principal{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
 }
 
 .container-hebergement{
     background: #F2F2F2;
     border-radius: 20px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.container-hebergement h2, p{
+    margin-left: 20px;
 }
 
 .row-hebergement{
@@ -223,47 +231,55 @@ input[type="text"]{
 
 .aside-container{
     background: #F2F2F2;
-    padding: 20px 30px;
-    display: flex;
+    padding: 20px;
     flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     border-radius: 20px;
 
 }
 .popular-and-chart{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .aside-image{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
 .card{
     display: flex;
-    flex-direction: row;
+    
+    margin: 10px;
     background: white;
     border-radius: 20px;
-    margin-bottom: 30px;
-    padding: 3px;
+    height: 150px;
+    width: 350px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    max-width: 100%;
 }
 
 
 .card .card-popular-image img{
     border-radius: 20px 0 0 20px;
     object-fit: cover;
+    padding: 3px;
     height: 150px;
     width: 150px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.card-title{
-    text-align: center;
+.card-body{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* GRID Activité */
