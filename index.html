@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <div id="wrapper-bloc">
+    <div class="wrapper">
         <header class="container-header">
             <div class="row-header">
                 <div id="logo">
@@ -32,9 +32,9 @@
 
         
         <!-- Section Title -->
-        <section id="description">
-            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
-            <p>En plein centre ville ou en pleine nature</p>
+        <section id="title">
+            <h1><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1><br>
+            <span>En plein centre ville ou en pleine nature</span>
         </section>
 
 
@@ -50,7 +50,7 @@
 
        <!-- Section Filtre -->
         <section id="filter">
-            <p><strong>Filtres</strong></p>
+            <span><strong>Filtres</strong></span>
             <div class="filter-btn">
                 <a class="filter-icon">
                     <i class="fas fa-money-bill-wave"></i>
@@ -272,104 +272,110 @@
         <!-- END -->
                
                 <!-- Section Plus Populaires -->
-                <aside class="aside-container">
+                <div class="aside-container">
                     <div class="popular-and-chart">
                         <h2>Les plus populaires</h2>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <div class="aside-image">
+                    <aside class="aside-image">
 
                         <div class="card">
-                            <div class="card-popular-image"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
-                            <div class="card-body">
+                            <div class="card-popular-image"><a href="#"><img src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt=""/></div>
+                            <div class="card-title">
                                 <h4>Hôtel Le soleil du matin</h4>
-                                <p>Nuit à partir de <strong>128€</strong></p>                                
-                            </div>
-                            <div class="container-star-rating">
-                                <div class="star-rating">
-                                    <input type="radio" name="rating1" id="rating1">
-                                    <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                <div class="card-body">
+                                    <p>Nuit à partir de <strong>128€</strong></p>
                                 </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating2" id="rating2">
-                                    <label for="rating2" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating3" id="rating3">
-                                    <label for="rating3" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating4" id="rating4">
-                                    <label for="rating4" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating5" id="rating5">
-                                    <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <div class="card-popular-image"><img src="images/hebergements/4_small/au_coeur_de_l'eau_chambres_d'hotes.jpg" alt=""/></div>
-                            <div class="card-body">
+                            <div class="card-title">
                                 <h4>Au coeur de l'eau </br> Chambres d'hôtes</h4>
-                                <p>Nuit à partir de <strong>71€</strong></p>                                 
-                            </div>
-                            <div class="container-star-rating">
-                                <div class="star-rating">
-                                    <input type="radio" name="rating1" id="rating1">
-                                    <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                <div class="card-body">
+                                    <p>Nuit à partir de <strong>71€</strong></p>
                                 </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating2" id="rating2">
-                                    <label for="rating2" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating3" id="rating3">
-                                    <label for="rating3" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating4" id="rating4">
-                                    <label for="rating4" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating5" id="rating5">
-                                    <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card">
                             <div class="card-popular-image"><img src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt=""/></div>
-                            <div class="card-body">
+                            <div class="card-title">
                                 <h4>Hôtel tout Bleu et Blanc</h4>
-                                <p>Nuit à partir de <strong>68€</strong></p>
-                            <div class="container-star-rating">
-                                <div class="star-rating">
-                                    <input type="radio" name="rating1" id="rating1">
-                                    <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                <div class="card-body">
+                                    <p>Nuit à partir de <strong>68€</strong></p>
                                 </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating2" id="rating2">
-                                    <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                <div class="container-star-rating">
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating1" id="rating1">
+                                        <label for="rating1" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating2" id="rating2">
+                                        <label for="rating2" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating3" id="rating3">
+                                        <label for="rating3" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating4" id="rating4">
+                                        <label for="rating4" class=""><i class="fas fa-star"></i></label>
+                                    </div>
+                                    <div class="star-rating">
+                                        <input type="radio" name="rating5" id="rating5">
+                                        <label for="rating5" class=""><i class="fas fa-star"></i></label>
+                                    </div>
                                 </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating3" id="rating3">
-                                    <label for="rating3" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating4" id="rating4">
-                                    <label for="rating4" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                                <div class="star-rating">
-                                    <input type="radio" name="rating5" id="rating5">
-                                    <label for="rating5" class=""><i class="fas fa-star"></i></label>
-                                </div>
-                            </div>
                             </div>
                         </div>
-                    </div>
-                </aside>         
+                    </aside>
+                </div>         
     </section>
         <!-- END -->
 
@@ -385,38 +391,41 @@
                             <div class="card-grid-img-box-1"><img src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port"/></div>                       
                             <h4 class="card-title">Vieux Port</h4>
                         </a>
-                    </div>
-                    
+                    </div> 
 
                     <div class="box-2">
                     <div class="card-grid">
-                        <div class="card-grid-img-2 "><a class="" href="#"><img src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues"/></div>
-                        <h4 class="card-title">Fort de Pomègues</h4>
+                        <a class="" href="#">
+                            <div class="card-grid-img-2 "><img src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues"/></div>
+                            <h4 class="card-title">Fort de Pomègues</h4>
                         </a>
                     </div>
                     <div class="card-grid">
-                        <div class="card-grid-img-3"><a class="" href="#"><img src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul"/></div>
-                        <h4 class="card-title">Iles du Frioul</h4>
+                        <a class="" href="#">
+                            <div class="card-grid-img-3"><img src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul"/></div>
+                            <h4 class="card-title">Iles du Frioul</h4>
                         </a>
                     </div>
                     </div>
 
                     <div class="card-grid">
                         <a class="" href="#">
-                        <div class="card-grid-img-box-1"><img src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques"/></div>
-                        <h4 class="card-title">Parc National des Calanques</h4>
+                            <div class="card-grid-img-box-1"><img src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques"/></div>
+                            <h4 class="card-title">Parc National des Calanques</h4>
                         </a>
                     </div>
 
                     <div class="box-2">
                     <div class="card-grid">
-                        <div class="card-grid-img-4"><a class="" href="#"><img src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde"/></a></div>
-                        <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
+                        <a class="" href="#">
+                            <div class="card-grid-img-4"><img src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde"/></div>
+                            <h4 class="card-title">Notre-Dame-de-la-Garde</h4>
+                        </a>
                     </div>
                     <div class="card-grid">
                         <a class="" href="#">
-                        <div class="card-grid-img-4"><img src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp"/></div>
-                        <h4 class="card-title">Parc Longchamp</h4>
+                            <div class="card-grid-img-4"><img src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp"/></div>
+                            <h4 class="card-title">Parc Longchamp</h4>
                         </a>
                     </div>
                     </div>
