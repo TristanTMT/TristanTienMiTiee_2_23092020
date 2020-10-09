@@ -81,6 +81,7 @@ input[type="text"]{
     box-sizing: border-box;
     height: 35px;
     border: solid 1px #F2F2F2;
+    font-weight: 900;
 }
 
 .research-btn {
@@ -217,6 +218,10 @@ input[type="text"]{
     max-height: 100%;
 }
 
+.content-hebergement{
+    padding: 5px;
+}
+
 /* Les plus populaires */
 
 .aside-container{
@@ -237,15 +242,13 @@ input[type="text"]{
 .aside-image{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 10px;
 }
 
 .card{
     display: flex;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
     margin: 10px;
-    background: white;
     border-radius: 20px;
     height: 150px;
     width: 350px;
@@ -259,17 +262,21 @@ input[type="text"]{
     object-fit: cover;
     padding: 3px;
     height: 150px;
-    width: 150px;
+    width: 100px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.card-body{
+.card-title{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
 }
+
+
+.card-title .container-star-rating{
+    margin-top: 70px; 
+}
+
 
 /* GRID Activité */
 
@@ -280,8 +287,8 @@ input[type="text"]{
 }
 
 .grid-activities{
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;   
+    justify-content: space-evenly;
 }
 
 .card-grid {
@@ -289,8 +296,7 @@ input[type="text"]{
     flex-direction: column;
     flex-wrap: wrap;
     background: white;
-    text-align: center;
-    
+    text-align: center;   
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -306,7 +312,6 @@ a .card-grid-img-box-1 img{
 }
 
 .card-title {
-    height: 10px;
     display: flex;
     justify-content: flex-start;
     margin: 15px;
@@ -388,51 +393,21 @@ footer {
 
 
 
-@media screen and (max-width: 650px)
+@media screen and (max-device-width: 650px)
 {
     .wrapper{
         margin: auto;
         width: auto;
     }
-    
-    a{
-        text-decoration: none;
-        color: inherit;
-    }
-    
+      
     /* Header */
     
     .container-header .row-header {
-        
+        flex-direction: column;
     }
-    
-    
-    .main-navbar ul {
-        text-align: center;
-    }
-    
-    .main-navbar a {
-        display: inline-block;
-        padding: .5em 1.5em;
-    }
-    
-    .item {
-        font-weight: 900;
-    }
-    
     
     /* Navigation */
     
-    .navbar {
-        list-style-type: none;
-        display: flex;
-    }
-    
-    nav a {
-        font-size: 1.3em;
-        color: #0065FC;
-        text-decoration: none;
-    }
     
     /* Description */
   
@@ -443,39 +418,13 @@ footer {
         justify-content: center; 
     }
     
-    #container-btn div i{
-        display: flex;
-        align-items: center;
-        background:  #F2F2F2;
-        height: 35px;
-        padding: 12px;
-        border-radius: 10px 0 0 10px;
-    }
-    
-    input[type="text"]{
-        font-size: 15px;
-        box-sizing: border-box;
-        height: 35px;
-        border: solid 1px #F2F2F2;
-    }
-    
     .research-btn {
         background: red;
-        color: #fff;
-        width: 100px;
-        height: 35px; 
-        border: none;
-        border-radius: 0 10px 10px 0;
-        cursor: pointer;
     }
     
     /* Filtre */
     #filter {
         flex-wrap: wrap;  
-    }
-    
-    .filter-btn:hover{
-        
     }
     
     /* Chart Info */
