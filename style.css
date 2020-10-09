@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,11 @@ body{
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.wrapper{
+    margin: auto;
+    width: 99%;
 }
 
 /* Header */
@@ -284,11 +290,12 @@ input[type="text"]{
     flex-wrap: wrap;
     background: white;
     text-align: center;
+    
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     margin-left: 30px;
-    width: 300px;
+    width: 250px;
 }
 
 a .card-grid-img-box-1 img{
@@ -341,6 +348,7 @@ a .card-grid-img-box-1 img{
 footer {
     background: #F2F2F2;
     padding: 10px;
+    width: auto;
 }
 
 #container-footer {
@@ -383,7 +391,8 @@ footer {
 @media screen and (max-width: 650px)
 {
     .wrapper{
-        width: 90%;
+        margin: auto;
+        width: auto;
     }
     
     a{
@@ -500,7 +509,7 @@ footer {
     .card-hebergement{ 
         text-align: start;
         margin-bottom: 10px;
-        width: 425px;
+        width: auto;
     }
 
     .card-hebergement .hebergement-image img{
@@ -522,8 +531,8 @@ footer {
         max-width: 100%;
     }
     
-    .card-body{
-
+    .card{
+        width: auto;
     }
     
     /* GRID Activité */
@@ -539,7 +548,7 @@ footer {
     }
 
     .card-grid{
-        width: 425px;
+        width: auto;
     }
     
     .card-grid a div img{
