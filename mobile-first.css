@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 15px;
+    margin: 25px;
     font-size: 12px;
 }
 
@@ -282,4 +282,51 @@ footer {
 .copy-footer {
     display: flex;
     justify-content: center;
+}
+
+
+
+
+
+@media screen and (min-width: 650px) and (max-width: 770px){
+    /* Navigation */
+.row-header{
+    flex-direction: row;
+}
+
+/* Filtre */
+#filter {
+    flex-wrap: ;
+}
+
+.filter-btn{
+    margin-left: 30px;
+}
+
+/* Les plus populaires */
+.card-popular{
+    max-width: 70%;
+}
+.card-popular-image img{
+    width: 200px;
+}
+
+/* Hébergement */
+
+.row-hebergement{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.card-hebergement{ 
+    text-align: center;
+}
+
+/* Footer */
+
+#container-footer {
+    flex-direction: row;
+    justify-content: center;
+}
+
 }
