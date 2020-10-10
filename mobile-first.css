@@ -1,3 +1,5 @@
+/* Global */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,6 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 15px;
     font-size: 12px;
-    color: black;
 }
 
 img{
@@ -22,6 +23,15 @@ ul li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+p{
+    margin: 0;
+}
+
 /* Navigation */
 .row-header{
     display: flex;
@@ -32,10 +42,52 @@ ul li{
 
 .main-navbar ul{
     display: flex;
+    align-items: center;
 }
 
 .main-navbar ul li{
     margin-right: 10px;
+}
+
+.navbar li{
+    color: #0065FC;
+}
+.navbar .item{
+    font-weight: 800;
+}
+
+/* Bouton */
+
+#container-btn div{
+    display: flex;
+    align-items: center;     
+}
+
+#container-btn .fa-map-marker-alt{
+    background: #F2F2F2;
+    padding: 12px;
+    border-radius: 10px 0 0 10px;
+}
+
+input[type="text"]{
+    font-size: 15px;
+    box-sizing: border-box;
+    height: 35px;
+    border: solid 1px #F2F2F2;
+    font-weight: 900;
+}
+
+.research-btn{
+    display: none;
+}
+
+#container-btn .fa-search{
+    background: #0065FC;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 /* Filtre */
@@ -94,11 +146,11 @@ ul li{
 }
 
 .container-hebergement{
-    margin: 10px;
+    padding: 25px;
 }
 
 .container-hebergement h2, p{
-    margin-left: 20px;
+    padding: 10px;
 }
 
 .row-hebergement{
@@ -125,6 +177,13 @@ ul li{
 /* Les plus populaires */
 .aside-container{
     background: #F2F2F2;
+    padding: 25px;
+}
+
+.popular-and-chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .aside-image{
@@ -136,19 +195,23 @@ ul li{
     background: white;
     flex-wrap: wrap;
     margin: 10px;
+    margin-left: 0;
     border-radius: 20px;
     max-width: 100%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 .card-popular-image img{
     height: 150px;
-    width: 150px;
+    width: 155px;
+    border-radius: 20px 0 0 20px;
 }
 
-.card-title{
+.card-body{
     display: flex;
     flex-direction: column;
+    padding: 15px;    
 }
+
 
 /* Boutons en étoile */
 .container-star-rating {
@@ -171,6 +234,13 @@ ul li{
 }
 
 /* GRID Activité */
+
+.container-activites-marseille{
+    padding: 25px;
+}
+.container-activites-marseille h2{
+    padding: 10px;
+}
 .card-grid{
     margin-bottom: 20px;
     border-radius: 20px;
@@ -181,6 +251,9 @@ ul li{
     height: 150px;
     width: 100%;
     border-radius: 20px 20px 0 0;
+}
+.card-grid h4{
+    padding: 15px;
 }
 
 /* Footer */

@@ -232,6 +232,7 @@ input[type="text"]{
     justify-content: space-evenly;
     border-radius: 20px;
 }
+
 .popular-and-chart{
     display: flex;
     justify-content: space-between;
@@ -243,7 +244,7 @@ input[type="text"]{
     flex-direction: column;
 }
 
-.card{
+.card-popular{
     display: flex;
     flex-direction: column;
     background: white;
@@ -257,7 +258,7 @@ input[type="text"]{
 }
 
 
-.card .card-popular-image img{
+.card-popular .card-popular-image img{
     border-radius: 20px 0 0 20px;
     object-fit: cover;
     padding: 3px;
