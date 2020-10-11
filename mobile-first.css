@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 25px;
+    margin: 20px;
     font-size: 12px;
 }
 
@@ -169,7 +169,7 @@ input[type="text"]{
 }
 
 .card-hebergement .hebergement-image img{
-    height: 150px;
+    height: 120px;
     width: 100%;
     border-radius: 20px 20px 0 0;
 }
@@ -287,28 +287,27 @@ footer {
 
 
 
-
-@media screen and (min-width: 650px) and (max-width: 770px){
-    /* Navigation */
+/* Ecran Tablette Mini */
+@media screen and (min-width: 600px) and (max-width: 770px){
+/* Navigation */
 .row-header{
     flex-direction: row;
 }
 
 /* Filtre */
-#filter {
-    flex-wrap: ;
-}
-
 .filter-btn{
     margin-left: 30px;
 }
 
 /* Les plus populaires */
-.card-popular{
-    max-width: 70%;
+.aside-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .card-popular-image img{
-    width: 200px;
+    width: 150px;
 }
 
 /* Hébergement */
@@ -327,6 +326,190 @@ footer {
 #container-footer {
     flex-direction: row;
     justify-content: center;
+}
+
+}
+
+/* Ecran iPad Pro */
+@media screen and (min-width: 771px) and (max-width: 999px){
+/* Navigation */
+.row-header{
+    flex-direction: row;
+}
+
+/* Hébergement */
+.principal{
+    flex-direction: row;
+}
+
+/* Les plus populaires */
+.aside-container{
+    
+    background: none;
+}
+
+.card-popular{
+    flex-direction: column;
+}
+.card-popular-image img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+/* GRID Activité */
+
+
+/* Footer */
+#container-footer {
+    flex-direction: row;
+}
+
+}
+
+
+
+
+/* Ecran Desktop */
+@media screen and (min-width: 1000px)
+{
+/* Navigation */
+.row-header{
+    flex-direction: row;
+}
+
+/* Bouton */
+.research-btn{
+    display: flex;
+    background: #0065FC;
+    color: #fff;
+    padding: 10px;
+    width: 100px;
+    height: 35px; 
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+#container-btn .fa-search{
+    display: none;
+}
+
+/* Hébergement */
+.principal{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-hebergement{
+    background: #F2F2F2;
+    width: 60%;
+}
+
+.row-hebergement{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card-hebergement{ 
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+/* Les plus populaires */
+.aside-container{
+    width: 35%;
+}
+
+.card-popular{
+    flex-direction: column;
+}
+
+.card-popular-image img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+/* GRID Activité */
+
+.grid-activities{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-grid{
+    width: 200px;
+}
+
+a .card-grid-img-box-1 img{
+    height: 450px;
+}
+
+.box-2 .card-grid-img-2 img{
+    height: 300px;
+}
+
+.box-2 .card-grid-img-3 img{
+    height: 100px;
+}
+
+.box-2 .card-grid-img-4 img{
+    height: 200px;
+}
+
+/* Footer */
+#container-footer {
+    flex-direction: row;
+}
+
+}
+
+/* Ecran Desktop */
+@media screen and (min-width: 1300px)
+{
+
+/* Hébergement */
+.principal{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: none;
+}
+
+.container-hebergement{
+    width: 65%;
+}
+
+.row-hebergement{
+    justify-content: space-evenly;
+}
+
+.card-hebergement{ 
+    margin-bottom: 30px;
+    background: white;
+}
+
+.card-hebergement img{ 
+    width: 240px;
+}
+
+
+/* Les plus populaires */
+.aside-container{
+    width: 30%;
+}
+.card-popular{
+    flex-direction: row;
+}
+
+.card-popular-image img{
+    width: 150px;
+    border-radius: 20px 0 0 20px;
+}
+
+/* GRID Activité */
+.card-grid{
+    width: 275px;
 }
 
 }
