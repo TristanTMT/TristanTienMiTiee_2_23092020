@@ -104,7 +104,13 @@ input[type="text"]{
     color: #0065FC;
     margin-left: 50px;
     margin-bottom: 10px;
+    transform: scale(1);
+    transition: transform 1000ms;
 }
+.filter-btn:hover{
+    transform: scale(1.15);
+}
+
 
 .filter-btn .filter-icon {
     border-radius: 100%;
@@ -466,7 +472,7 @@ a .card-grid-img-box-1 img{
 }
 
 /* Ecran Desktop */
-@media screen and (min-width: 1300px)
+@media screen and (min-width: 1299px)
 {
 
 /* Hébergement */
@@ -477,7 +483,7 @@ a .card-grid-img-box-1 img{
 }
 
 .container-hebergement{
-    width: 65%;
+    width: 68%;
 }
 
 .row-hebergement{
@@ -510,6 +516,18 @@ a .card-grid-img-box-1 img{
 /* GRID Activité */
 .card-grid{
     width: 275px;
+}
+
+}
+
+
+/* Très grand écran */
+@media screen and (min-width: 1580px)
+{
+
+/* Hébergement */
+.card-hebergement{ 
+    width: 300px;
 }
 
 }
