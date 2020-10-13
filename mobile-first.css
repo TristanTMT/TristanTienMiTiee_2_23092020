@@ -214,6 +214,7 @@ input[type="text"]{
 
 .card-body{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     padding: 15px;    
 }
