@@ -9,7 +9,7 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 3px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 img {
@@ -33,25 +33,30 @@ p {
 }
 
 /* Navigation */
-.row-header {
+.container-header{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 
-.main-navbar ul {
+.logo{
   display: flex;
   align-items: center;
-}
-
-.main-navbar ul li {
-  margin-right: 10px;
-}
-
-.navbar li {
+  justify-content: space-between;
   color: #0065fc;
+  font-weight: 900;
+  padding: 10px;
+  margin-bottom: 15px;
 }
-.navbar .item {
-  font-weight: 800;
+
+.main-navbar{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #f2f2f2;
+}
+
+.main-navbar ul:nth-child(1) {
+  border-bottom: 3px solid #0065fc;
+  color: #0065fc;
 }
 
 /* Bouton */
@@ -89,42 +94,37 @@ input[type="text"] {
   cursor: pointer;
 }
 
-/* Filtre */
-#filter {
-  
+/* Filter */
+#filter{
+  margin: 10px 0 10px 0;
+}
+.filter__firstRow{
+  display: inline-flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-.filter-btn {
+.filter__btn{
+  background: white;
+  width: 150px;
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+  align-items: center;
   display: flex;
-  border-radius: 25px;
-  border: solid 3px #f2f2f2;
-  color: #0065fc;
-  margin-left: 50px;
+  cursor: pointer;
   margin-bottom: 10px;
-  transform: scale(1);
-  transition: transform 1000ms;
-}
-.filter-btn:hover {
-  transform: scale(1.15);
 }
 
-.filter-btn .filter-icon {
+.filter__btn i{
   border-radius: 100%;
   background: #deebff;
   text-align: center;
-  border: solid 4px #f2f2f2;
+  border: solid 2px #f2f2f2;
   padding: 10px;
-  cursor: pointer;
+  margin-right: 5%;
+  color: #0065fc;
 }
 
-.filter-btn button {
-  border-radius: 25px;
-  border: none;
-  padding: 15px;
-  background: white;
-  transition: 0.5s;
-  cursor: pointer;
-}
 
 /* Chart Info */
 #chart-info {
@@ -438,6 +438,10 @@ footer {
 
 /* Ecran Desktop */
 @media screen and (min-width: 1299px) {
+  .container-header{
+    justify-content: space-between;
+  }
+
   .navbar li:nth-child(1){
     border-top: 2px solid blue;
   }

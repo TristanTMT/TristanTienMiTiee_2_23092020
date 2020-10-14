@@ -15,19 +15,19 @@
 <body>
   <div class="wrapper">
     <header class="container-header">
-      <div class="row-header">
-        <div id="logo">
-          <img src="images/logo/Reservia.svg" alt="logo Réservia " />
-        </div>
-
+      <nav class="logo">
+        <img src="images/logo/Reservia.svg" alt="Logo Réservia " />
+        <a class="item" href="#">S'inscrire</a>
+      </nav>
+        
         <nav class="main-navbar">
           <ul class="navbar">
             <li><a href="#container-hebergement">Hébergements</a></li>
+          </ul>
+          <ul class="navbar">
             <li><a href="#container-activites-marseille">Activités</a></li>
-            <li><a class="item" href="#">S'inscrire</a></li>
           </ul>
         </nav>
-      </div>
     </header>
 
     <!-- Section Title -->
@@ -49,30 +49,26 @@
     <!-- Section Filtre -->
     <section id="filter">
       <span><strong>Filtres</strong></span>
-      <div class="filter-btn">
-        <a class="filter-icon">
-          <i class="fas fa-money-bill-wave"></i>
-        </a>
-        <button>Economique</button>
-      </div>
-      <div class="filter-btn">
-        <div class="filter-icon">
-          <i class="fas fa-child"></i>
-        </div>
-        <button>Familial</button>
-      </div>
-      <div class="filter-btn">
-        <div class="filter-icon">
+        <a>
+          <article class="filter__firstRow">
+              <button class="filter__btn">
+                <i class="fas fa-money-bill-wave"></i>
+                Economique
+              </button>
+            <button class="filter__btn">
+              <i class="fas fa-child"></i>
+              Familial
+            </button>
+          </article> 
+        <button class="filter__btn">
           <i class="fas fa-heart"></i>
-        </div>
-        <button>Romantique</button>
-      </div>
-      <div class="filter-btn">
-        <div class="filter-icon">
+          Romantique
+        </button>
+        <button class="filter__btn">
           <i class="fas fa-dog"></i>
-        </div>
-        <button>Animaux autorisés</button>
-      </div>
+          Animaux autorisés
+        </button>
+      </a>
     </section>
 
     <!-- Section Title -->
