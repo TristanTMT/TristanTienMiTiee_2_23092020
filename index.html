@@ -1,568 +1,488 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="#" />
-    <link rel="stylesheet" href="mobile-first.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <meta name="description" content="#" />
-  </head>
+<html lang="fr">
 
-  <body>
-    <div class="wrapper">
-      <header class="container-header">
-        <div class="row-header">
-          <div id="logo">
-            <img src="images/logo/Reservia.svg" alt="logo Réservia " />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maquette Réservia</title>
+  <link rel="stylesheet" href="mobile-first.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+  <meta name="description" content="#" />
+</head>
 
-          <nav class="main-navbar">
-            <ul class="navbar">
-              <li><a href="#container-hebergement">Hébergements</a></li>
-              <li><a href="#container-activites-marseille">Activités</a></li>
-              <li><a class="item" href="#">S'inscrire</a></li>
-            </ul>
-          </nav>
+<body>
+  <div class="wrapper">
+    <header class="container-header">
+      <div class="row-header">
+        <div id="logo">
+          <img src="images/logo/Reservia.svg" alt="logo Réservia " />
         </div>
-      </header>
 
-      <br />
+        <nav class="main-navbar">
+          <ul class="navbar">
+            <li><a href="#container-hebergement">Hébergements</a></li>
+            <li><a href="#container-activites-marseille">Activités</a></li>
+            <li><a class="item" href="#">S'inscrire</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-      <!-- Section Title -->
-      <section id="title">
-        <h1>
-          <strong>Trouvez votre hébergement pour des vacances de rêve</strong>
-        </h1>
-        <br />
-        <span>En plein centre ville ou en pleine nature</span>
-      </section>
-         
-      <!-- Section Bouton de recherche -->
-      <section id="container-btn">
-        <div>
-          <i class="fas fa-map-marker-alt"></i>
-          <input type="text" placeholder="Marseille, France" />
-          <button class="research-btn">Rechercher</button>
-          <i class="fas fa-search"></i>
+    <!-- Section Title -->
+    <section id="title">
+      <h1>
+        <strong>Trouvez votre hébergement pour des vacances de rêve</strong>
+      </h1>
+      <span>En plein centre ville ou en pleine nature</span>
+    </section>
+       
+    <!-- Section Bouton de recherche -->
+    <section id="container-btn">
+      <i class="fas fa-map-marker-alt"></i>
+      <input type="text" placeholder="Marseille, France" />
+      <button class="research-btn">Rechercher</button>
+      <i class="fas fa-search"></i>
+    </section>
+       
+    <!-- Section Filtre -->
+    <section id="filter">
+      <span><strong>Filtres</strong></span>
+      <div class="filter-btn">
+        <a class="filter-icon">
+          <i class="fas fa-money-bill-wave"></i>
+        </a>
+        <button>Economique</button>
+      </div>
+      <div class="filter-btn">
+        <div class="filter-icon">
+          <i class="fas fa-child"></i>
         </div>
+        <button>Familial</button>
+      </div>
+      <div class="filter-btn">
+        <div class="filter-icon">
+          <i class="fas fa-heart"></i>
+        </div>
+        <button>Romantique</button>
+      </div>
+      <div class="filter-btn">
+        <div class="filter-icon">
+          <i class="fas fa-dog"></i>
+        </div>
+        <button>Animaux autorisés</button>
+      </div>
+    </section>
+
+    <!-- Section Title -->
+    <section id="chart-info">
+      <span><i class="fas fa-info"></i></span>
+      <p>Plus de 500 logements disponibles dans cette ville</p>
+    </section>
+       
+    <!-- Section Hébergement à Marseille -->
+    <main class="principal">
+      <section class="container-hebergement">
+        <h2>Hébergement à Marseille</h2>
+        <article class="row-hebergement">
+          <figure class="card-hebergement">
+              <img class="hebergement-image" src="images/hebergements/4_small/auberge_la_cannebière.jpg" alt="Elephant at sunset" />
+            <div class="card-body">
+              <h3>Auberge la Cannebière</h3>
+              <span>Nuit à partir de <strong>25€</strong></span>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <figure class="card-hebergement">
+              <img class="hebergement-image" src="images/hebergements/4_small/hotel_du_port.jpg" alt="Elephant at sunset" />
+            <div class="card-body">
+              <h3>Hôtel du port</h3>
+              <span>Nuit à partir de <strong>52€</strong></span>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <figure class="card-hebergement">
+              <img class="hebergement-image" src="images/hebergements/4_small/hotel_les_mouettes.jpg" alt="Elephant at sunset" />
+            <div class="card-body">
+              <h3>Hôtel Les Mouettes</h3>
+              <span>Nuit à partir de <strong>70€</strong></span>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <figure class="card-hebergement">
+              <img class="hebergement-image" src="images/hebergements/4_small/hotel_de_la_mer.jpg" alt="Elephant at sunset" />
+            <div class="card-body">
+              <h3>Hôtel de la mer</h3>
+              <span>Nuit à partir de <strong>46€</strong></span>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <figure class="card-hebergement">
+              <img class="hebergement-image" src="images/hebergements/4_small/auberge_le_panier.jpg" alt="Elephant at sunset" />
+            <div class="card-body">
+              <h3>Auberge Le Panier</h3>
+              <span>Nuit à partir de <strong>23€</strong></span>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+          <figure class="card-hebergement">
+              <img class="hebergement-image" src="images/hebergements/4_small/hotel_chez_amina.jpg" alt="Elephant at sunset" />
+            <div class="card-body">
+              <h3>Hôtel chez Amina</h3>
+              <span>Nuit à partir de <strong>96€</strong></span>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </article>
+        <p><strong>Afficher plus</strong></p>
       </section>
-         
-      <!-- Section Filtre -->
-      <section id="filter">
-        <span><strong>Filtres</strong></span>
-        <div class="filter-btn">
-          <a class="filter-icon">
-            <i class="fas fa-money-bill-wave"></i>
+
+      <!-- END -->
+
+      <!-- Section Plus Populaires -->
+      <aside class="aside-container">
+        <div class="popular-and-chart">
+          <h2>Les plus populaires</h2>
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <article class="aside-image">
+          <figure class="card-popular">
+              <img class="card-popular-image" src="images/hebergements/4_small/hotel_soleil_du_matin.jpg" alt="" />
+            <div class="card-body">
+              <figcaption>
+                <h3>Hôtel Le soleil du matin</h3>
+                <span>Nuit à partir de <strong>128€</strong></span>
+              </figcaption>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="card-popular">
+              <img class="card-popular-image" src="images/hebergements/4_small/au_coeur_de_l'eau_chambres_d'hotes.jpg" alt="" />
+            <div class="card-body">
+              <figcaption>
+                <h3>Au coeur de l'eau Chambres d'hôtes</h3>
+                <span>Nuit à partir de <strong>71€</strong></span>
+              </figcaption>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <figure class="card-popular">
+              <img class="card-popular-image" src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="" />
+            <div class="card-body">
+              <figcaption>
+                <h3>Hôtel tout Bleu et Blanc</h3>
+                <span>Nuit à partir de <strong>68€</strong></span>
+              </figcaption>
+              <div class="container-star-rating">
+                <div class="star-rating">
+                  <input type="radio" name="rating1" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating2" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating3" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating4" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+                <div class="star-rating">
+                  <input type="radio" name="rating5" />
+                  <label><i class="fas fa-star"></i></label>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </article>
+      </aside>
+    </main>
+    <!-- END -->
+
+    <br />
+
+    <!-- Section Activités à Marseille  -->
+    <section class="container-activites-marseille">
+      <div>
+        <h2>Activités à Marseille</h2>
+      </div>
+
+      <div class="grid-activities">
+        <figure class="card-grid">
+          <a class="" href="#">
+              <img class="card-grid-img-box-1" src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port" />
+            <figcaption class="card-body">
+              <h3>Vieux Port</h3>
+            </figcaption>
           </a>
-          <button>Economique</button>
-        </div>
-        <div class="filter-btn">
-          <div class="filter-icon">
-            <i class="fas fa-child"></i>
-          </div>
-          <button>Familial</button>
-        </div>
-        <div class="filter-btn">
-          <div class="filter-icon">
-            <i class="fas fa-heart"></i>
-          </div>
-          <button>Romantique</button>
-        </div>
-        <div class="filter-btn">
-          <div class="filter-icon">
-            <i class="fas fa-dog"></i>
-          </div>
-          <button>Animaux autorisés</button>
-        </div>
-      </section>
+        </figure>
 
-      <!-- Section Title -->
-      <section id="chart-info">
-        <span><i class="fas fa-info"></i></span>
-        <p>Plus de 500 logements disponibles dans cette ville</p>
-      </section>
-         
-      <!-- Section Hébergement à Marseille -->
-      <main class="principal">
-        <section class="container-hebergement">
-          <h2>Hébergement à Marseille</h2>
-          <div class="row-hebergement">
-            <div class="card-hebergement">
-              <div class="hebergement-image">
-                <img
-                  src="images/hebergements/4_small/auberge_la_cannebière.jpg"
-                  alt="Elephant at sunset"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Auberge la Cannebière</h3>
-                <span>Nuit à partir de <strong>25€</strong></span>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-hebergement">
-              <div class="hebergement-image">
-                <img
-                  src="images/hebergements/4_small/hotel_du_port.jpg"
-                  alt="Elephant at sunset"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Hôtel du port</h3>
-                <span>Nuit à partir de <strong>52€</strong></span>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-hebergement">
-              <div class="hebergement-image">
-                <img
-                  src="images/hebergements/4_small/hotel_les_mouettes.jpg"
-                  alt="Elephant at sunset"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Hôtel Les Mouettes</h3>
-                <span>Nuit à partir de <strong>70€</strong></span>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-hebergement">
-              <div class="hebergement-image">
-                <img
-                  src="images/hebergements/4_small/hotel_de_la_mer.jpg"
-                  alt="Elephant at sunset"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Hôtel de la mer</h3>
-                <span>Nuit à partir de <strong>46€</strong></span>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-hebergement">
-              <div class="hebergement-image">
-                <img
-                  src="images/hebergements/4_small/auberge_le_panier.jpg"
-                  alt="Elephant at sunset"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Auberge Le Panier</h3>
-                <span>Nuit à partir de <strong>23€</strong></span>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-hebergement">
-              <div class="hebergement-image">
-                <img
-                  src="images/hebergements/4_small/hotel_chez_amina.jpg"
-                  alt="Elephant at sunset"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Hôtel chez Amina</h3>
-                <span>Nuit à partir de <strong>96€</strong></span>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p><strong>Afficher plus</strong></p>
-        </section>
-
-        <!-- END -->
-
-        <!-- Section Plus Populaires -->
-        <aside class="aside-container">
-          <div class="popular-and-chart">
-            <h2>Les plus populaires</h2>
-            <i class="fas fa-chart-line"></i>
-          </div>
-          <div class="aside-image">
-            <div class="card-popular">
-              <div class="card-popular-image">
-                <img
-                  src="images/hebergements/4_small/hotel_soleil_du_matin.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <div>
-                  <h3>Hôtel Le soleil du matin</h3>
-                  <span>Nuit à partir de <strong>128€</strong></span>
-                </div>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-popular">
-              <div class="card-popular-image">
-                <img
-                  src="images/hebergements/4_small/au_coeur_de_l'eau_chambres_d'hotes.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <div>
-                  <h3>Au coeur de l'eau Chambres d'hôtes</h3>
-                  <span>Nuit à partir de <strong>71€</strong></span>
-                </div>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="card-popular">
-              <div class="card-popular-image">
-                <img
-                  src="images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="card-body">
-                <div>
-                  <h3>Hôtel tout Bleu et Blanc</h3>
-                  <span>Nuit à partir de <strong>68€</strong></span>
-                </div>
-                <div class="container-star-rating">
-                  <div class="star-rating">
-                    <input type="radio" name="rating1" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating2" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating3" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating4" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                  <div class="star-rating">
-                    <input type="radio" name="rating5" />
-                    <label><i class="fas fa-star"></i></label>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </main>
-      <!-- END -->
-
-      <br />
-
-      <!-- Section Activités à Marseille  -->
-      <section class="container-activites-marseille">
-        <div>
-          <h2>Activités à Marseille</h2>
-        </div>
-
-        <div class="grid-activities">
-          <div class="card-grid">
+        <div class="box-2">
+          <figure class="card-grid">
             <a class="" href="#">
-              <div class="card-grid-img-box-1">
-                <img
-                  src="images/activites/4_small/vieux_port.jpg"
-                  alt="Vieux Port"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Vieux Port</h3>
-              </div>
+                <img class="card-grid-img-2" src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues" />
+              <figcaption class="card-body">
+                <h3>Fort de Pomègues</h3>
+              </figcaption>
             </a>
-          </div>
-
-          <div class="box-2">
-            <div class="card-grid">
-              <a class="" href="#">
-                <div class="card-grid-img-2">
-                  <img
-                    src="images/activites/4_small/fort_de_pomègues.jpg"
-                    alt="Fort de Pomègues"
-                  />
-                </div>
-                <div class="card-body">
-                  <h3>Fort de Pomègues</h3>
-                </div>
-              </a>
-            </div>
-            <div class="card-grid">
-              <a class="" href="#">
-                <div class="card-grid-img-3">
-                  <img
-                    src="images/activites/4_small/iles_du_frieul.jpg"
-                    alt="Iles du Frioul"
-                  />
-                </div>
-                <div class="card-body">
-                  <h3>Iles du Frioul</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="card-grid">
+          </figure>
+          <figure class="card-grid">
             <a class="" href="#">
-              <div class="card-grid-img-box-1">
-                <img
-                  src="images/activites/4_small/parc_national_des_calanques.jpg"
-                  alt="Parc National des Calanques"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Parc National des Calanques</h3>
-              </div>
+                <img class="card-grid-img-3" src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul" />
+              <figcaption class="card-body">
+                <h3>Iles du Frioul</h3>
+              </figcaption>
             </a>
-          </div>
-
-          <div class="box-2">
-            <div class="card-grid">
-              <a class="" href="#">
-                <div class="card-grid-img-4">
-                  <img
-                    src="images/activites/4_small/notre_dame_de_la_garde.jpg"
-                    alt="Notre-Dame-de-la-Garde"
-                  />
-                </div>
-                <div class="card-body">
-                  <h3>Notre-Dame-de-la-Garde</h3>
-                </div>
-              </a>
-            </div>
-            <div class="card-grid">
-              <a class="" href="#">
-                <div class="card-grid-img-4">
-                  <img
-                    src="images/activites/4_small/parc_longchamp.jpg"
-                    alt="Parc Longchamp"
-                  />
-                </div>
-                <div class="card-body">
-                  <h3>Parc Longchamp</h3>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END -->
-
-      <br />
-         
-      <footer>
-        <div id="container-footer">
-          <div class="a-propos">
-            <ul>
-              <li>
-                <h2 class="title-footer">A propos</h2>
-              </li>
-              <li>Fonctionnement du site</li>
-              <li>Conditions générales de vente</li>
-              <li>Données et confidentialité</li>
-            </ul>
-          </div>
-          <div class="nos-hebergements">
-            <ul>
-              <li>
-                <h2 class="title-footer">Nos hébergements</h2>
-              </li>
-              <li>Charte qualité</li>
-              <li>Soumettre votre hôtel</li>
-            </ul>
-          </div>
-          <div class="assistance">
-            <ul>
-              <li>
-                <h2 class="title-footer">Assistance</h2>
-              </li>
-              <li>Nous contacter</li>
-              <li>Centre d'aide</li>
-            </ul>
-          </div>
+          </figure>
         </div>
 
-        <div class="copy-footer">
-          <p>Tout droit réservé by &copy;Tristan Tien-Mi-Tiee 2020</p>
+        <figure class="card-grid">
+          <a href="#">
+              <img class="card-grid-img-box-1" src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques" />
+            <figcaption class="card-body">
+              <h3>Parc National des Calanques</h3>
+            </figcaption>
+          </a>
+        </figure>
+
+        <div class="box-2">
+          <figure class="card-grid">
+            <a href="#">
+                <img class="card-grid-img-4" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde" />
+              <figcaption class="card-body">
+                <h3>Notre-Dame-de-la-Garde</h3>
+              </figcaption>
+            </a>
+          </figure>
+          <figure class="card-grid">
+            <a href="#">
+                <img class="card-grid-img-4" src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp" />
+              <figcaption class="card-body">
+                <h3>Parc Longchamp</h3>
+              </figcaption>
+            </a>
+          </figure>
         </div>
-      </footer>
-      <!-- END -->
-    </div>
-  </body>
+      </div>
+    </section>
+    <!-- END -->
+
+    <br />
+       
+    <footer>
+      <div id="container-footer">
+        <div class="a-propos">
+          <ul>
+            <li>
+              <h2 class="title-footer">A propos</h2>
+            </li>
+            <li>Fonctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+          </ul>
+        </div>
+        <div class="nos-hebergements">
+          <ul>
+            <li>
+              <h2 class="title-footer">Nos hébergements</h2>
+            </li>
+            <li>Charte qualité</li>
+            <li>Soumettre votre hôtel</li>
+          </ul>
+        </div>
+        <div class="assistance">
+          <ul>
+            <li>
+              <h2 class="title-footer">Assistance</h2>
+            </li>
+            <li>Nous contacter</li>
+            <li>Centre d'aide</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy-footer">
+        <p>Tout droit réservé by &copy;Tristan Tien-Mi-Tiee 2020</p>
+      </div>
+    </footer>
+    <!-- END -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

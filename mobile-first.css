@@ -8,7 +8,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 20px;
+  margin: 3px;
   font-size: 12px;
 }
 
@@ -174,11 +174,19 @@ p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.card-hebergement .hebergement-image img {
+.card-hebergement .hebergement-image {
   height: 120px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   padding: 3px;
+}
+
+.card-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px 0 10px 10px;
+  justify-content: space-between;
 }
 
 /* Les plus populaires */
@@ -205,18 +213,14 @@ p {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
-.card-popular-image img {
+.card-popular-image {
     
   height: 150px;
   border-radius: 20px 0 0 20px;
 }
 
-.card-body {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 15px;
-  justify-content: space-between;
+.card-body figcaption {
+  padding-top: 15px
 }
 
 /* Boutons en étoile */
@@ -349,7 +353,7 @@ footer {
   .card-popular {
     flex-direction: column;
   }
-  .card-popular-image img {
+  .card-popular-image {
     width: 100%;
     border-radius: 20px 20px 0 0;
   }
@@ -419,7 +423,7 @@ footer {
     width: 300px;
   }
 
-  .card-popular-image img {
+  .card-popular-image {
     max-width: 100%;
     border-radius: 20px 20px 0 0;
   }
@@ -434,22 +438,11 @@ footer {
   .card-grid {
     width: 200px;
   }
-
-  a .card-grid-img-box-1 img {
-    height: 450px;
+  .card-grid .card-grid-img-box-1{
+    height: 350px;
   }
 
-  .box-2 .card-grid-img-2 img {
-    height: 300px;
-  }
-
-  .box-2 .card-grid-img-3 img {
-    height: 100px;
-  }
-
-  .box-2 .card-grid-img-4 img {
-    height: 200px;
-  }
+  
 
   /* Footer */
   #container-footer {
@@ -459,6 +452,15 @@ footer {
 
 /* Ecran Desktop */
 @media screen and (min-width: 1299px) {
+  .navbar li:nth-child(1){
+    border-top: 2px solid blue;
+  }
+  .navbar li:nth-child(1){
+    border-top: 2px solid blue;
+  }
+  .navbar li:nth-child(2){
+    color: black;
+  }
   /* Hébergement */
   .principal {
     flex-direction: row;
@@ -468,6 +470,7 @@ footer {
 
   .container-hebergement {
     width: 68%;
+    border-radius: 20px;
   }
 
   .row-hebergement {
@@ -486,19 +489,30 @@ footer {
   /* Les plus populaires */
   .aside-container {
     width: 30%;
+    border-radius: 20px;
   }
   .card-popular {
     flex-direction: row;
   }
 
-  .card-popular-image img {
+  .card-popular-image  {
     width: 150px;
+    height: 150px;
     border-radius: 20px 0 0 20px;
   }
 
   /* GRID Activité */
   .card-grid {
-    width: 275px;
+    width: 50%;
+    margin: 15px;
+  }
+  .box-2 .card-grid {
+    width: 90%;
+  }
+
+  /* Footer */
+  #container-footer ul {
+    padding-right: 250px;
   }
 }
 
