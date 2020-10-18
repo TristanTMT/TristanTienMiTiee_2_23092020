@@ -44,7 +44,6 @@ a {
   justify-content: space-between;
   color: #0065fc;
   font-weight: 900;
-  padding: 10px;
   margin: var(--margin-btween-block);
 }
 
@@ -172,9 +171,13 @@ input[type="text"] {
   justify-content: space-between;
   align-items: center;
 }
+.popular-and-chart i{
+  font-size: 15px;
+}
 
 .card-popular {
   display: flex;
+  
   background: white;
   margin: 15px 0 0 0;
   border-radius: 20px;
@@ -189,7 +192,9 @@ input[type="text"] {
 }
 
 .card-popular .card-body {
-  margin: 15px 0 0 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
   width: 50%;
 }
 
@@ -200,7 +205,7 @@ input[type="text"] {
 }
 
 .container-hebergement {
-  padding: 10px;
+  padding: 10px 0 10px 0;
 }
 
 .row-hebergement {
@@ -219,17 +224,20 @@ input[type="text"] {
 }
 
 .card-hebergement .hebergement-image {
-  height: 120px;
+  height: 100px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   padding: 3px;
 }
 
-.card-body {
-  display: flex;
-  flex-wrap: wrap;
+.card-body { 
+  padding: 5px 0 5px 15px;
   flex-direction: column;
-  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.container-hebergement p {
+  padding: 20px 0 10px 0;
 }
 
 /* Boutons en étoile */
@@ -254,8 +262,8 @@ input[type="text"] {
 
 /* GRID Activité */
 
-.container-activites-marseille {
-  margin: var(--margin-btween-block);
+.container-activites-marseille h2 {
+  padding: var(--margin-btween-block);
 }
 
 .card-grid {
