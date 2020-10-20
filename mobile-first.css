@@ -12,7 +12,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 3px;
+  margin: 5px;
   font-size: 12px;
 }
 
@@ -69,7 +69,10 @@ a {
 
 /* Title */
 #title {
-  margin: var(--margin-btween-block);
+  margin: 15px 0 15px 0;
+}
+#title h1{
+  margin-bottom: 10px;
 }
 
 /* Bouton */
@@ -124,7 +127,7 @@ input[type="text"] {
 
 .filter__btn {
   background: white;
-  width: 150px;
+  width: 200px;
   border: 3px solid #f2f2f2;
   border-radius: 30px;
   align-items: center;
@@ -144,8 +147,12 @@ input[type="text"] {
   text-align: center;
   border: solid 2px #f2f2f2;
   padding: 10px;
-  margin-right: 5%;
+  margin-right: 10px;
   color: #0065fc;
+}
+
+.filter__btn.romantique{
+  width: 150px;
 }
 
 /* Chart Info */
@@ -166,7 +173,7 @@ input[type="text"] {
 /* Les plus populaires */
 .aside-container {
   background: #f2f2f2;
-  padding: 10px;
+  padding: 20px 0 0 0;
 }
 
 .popular-and-chart {
@@ -196,7 +203,6 @@ input[type="text"] {
 .card-popular .card-body {
   display: flex;
   justify-content: space-between;
-  padding: 15px 0 15px 15px;
 }
 
 /* Hébergement */
@@ -206,7 +212,7 @@ input[type="text"] {
 }
 
 .container-hebergement {
-  padding: 10px 0 10px 0;
+  padding: 20px 0 10px 0;
 }
 
 .row-hebergement {
@@ -232,7 +238,7 @@ input[type="text"] {
 }
 
 .card-body { 
-  padding: 5px 0 5px 15px;
+  padding: 10px;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -248,14 +254,14 @@ input[type="text"] {
 }
 
 .stars--three i:nth-child(4){
-  color: grey;
+  color: rgb(219, 219, 219);
 }
 .stars--three i:nth-child(5){
-  color: grey;
+  color: rgb(219, 219, 219);
 }
 
 .stars--four i:nth-child(5){
-  color: grey;
+  color: rgb(219, 219, 219);
 }
 
 /* GRID Activité */
@@ -304,27 +310,15 @@ footer {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 500px) {
-  /* Filter */
-  #filter {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 /* Ecran Tablette Mini */
-@media screen and (min-width: 600px) and (max-width: 749px) {
+@media screen and (min-width: 600px) and (max-width: 767px) {
   /* Filtre */
   .filter__btn {
     margin-left: 50px;
   }
 
   /* Les plus populaires */
-  .aside-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  
 
   /* Hébergement */
   .card-hebergement {
@@ -340,7 +334,7 @@ footer {
 }
 
 /* Ecran iPad Pro */
-@media screen and (min-width: 750px) and (max-width: 899px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   /* Navigation */
   .container-header {
     flex-direction: row;
@@ -368,33 +362,64 @@ footer {
     display: flex;
   }
 
-  /* Filtre */
-  .filter__btn {
-    margin-left: 30px;
+  /* Filter */
+  #filter {
+    display: flex;
+  }
+  .filter__firstRow button{
+    width: 150px;
+  }
+  .filter__btn.familial{
+    width: 110px;
+  }
+  .filter__secondRow {
+    display: flex;
+    justify-content: space-around;
   }
 
   /* Hébergement */
   .principal {
-    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .container-hebergement {
+    background: #f2f2f2;
+    width: 45%;
+  }
+
+  .card-hebergement {
+    width: 80%;
+    background: white;
   }
 
   /* Les plus populaires */
-  .aside-container{
-    align-self: center;
+  .aside-container {
+    width: 45%;
   }
 
   .card-popular {
     flex-direction: column;
+    width: 80%;
   }
+
   .card-popular-image {
     width: 100%;
     border-radius: 20px 20px 0 0;
   }
 
-  .card-grid img {
-    height: 200px;
+  /* GRID Activité */
+
+  .grid-activities {
+    display: flex;
   }
 
+  .card-grid {
+    margin: 10px;
+  }
+  .card-grid .card-grid-img-box-1 {
+    height: 350px;
+  }
+  
   /* Footer */
   #container-footer {
     flex-direction: row;
@@ -402,7 +427,7 @@ footer {
 }
 
 /* Ecran Desktop */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
   /* Navigation */
   .container-header {
     flex-direction: row;
@@ -438,9 +463,20 @@ footer {
     display: none;
   }
 
-  /* Filtre */
-  .filter__btn {
-    margin-left: 30px;
+  /* Filter */
+  #filter {
+    display: flex;
+  }
+  .filter__firstRow button{
+    width: 150px;
+    margin-left: 10px;
+  }
+  .filter__btn.familial{
+    width: 110px;
+  }
+  .filter__secondRow {
+    display: flex;
+    justify-content: space-around;
   }
   /* Hébergement */
   .principal {
@@ -464,8 +500,8 @@ footer {
   }
 
   .card-hebergement {
-    margin-bottom: 10px;
-    width: 250px;
+    margin: 10px;
+    width: 220px;
     background: white;
   }
 
@@ -506,6 +542,13 @@ footer {
 
 /* Ecran Desktop */
 @media screen and (min-width: 1299px) {
+
+  .filter__btn.familial{
+    width: 120px;
+  }
+  .filter__secondRow{
+    display: flex;
+  }
   /* Hébergement */
   .principal {
     display: flex;
@@ -536,11 +579,19 @@ footer {
 
   /* GRID Activité */
   .card-grid {
-    width: 50%;
+    width: 40%;
     margin: 15px;
   }
   .box-2 .card-grid {
     width: 90%;
+  }
+  
+  .box-2 .card-grid-img-2 {
+    height: 200px;
+  }
+
+  .box-2 .card-grid-img-3 {
+    height: 100px;
   }
 
   /* Footer */
@@ -555,14 +606,4 @@ footer {
   .card-hebergement {
     width: 300px;
   }
-}
-
-
-
-
-
-
-.card-test{
-  background: #fff;
-  display: flex;
 }
