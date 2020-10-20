@@ -30,6 +30,10 @@ ul li {
 a {
   text-decoration: none;
   color: inherit;
+  margin: none;
+  padding: none;
+  height: none;
+  width: none;
 }
 
 /* Navigation */
@@ -184,7 +188,7 @@ input[type="text"] {
 
 .card-popular-image {
   padding: 3px;
-  width: 50%;
+  width: 45%;
   height: 135px;
   border-radius: 20px 0 0 20px;
 }
@@ -193,7 +197,6 @@ input[type="text"] {
   display: flex;
   justify-content: space-between;
   padding: 15px 0 15px 15px;
-  width: 50%;
 }
 
 /* Hébergement */
@@ -244,18 +247,15 @@ input[type="text"] {
   color: #0065fc;
 }
 
-.container-star-rating input {
-  display: none;
-}
-.container-star-rating label {
-  font-size: 11px;
-  cursor: pointer;
-}
-.container-star-rating i[data-active="false"] {
+.stars--three i:nth-child(4){
   color: grey;
 }
-.container-star-rating i[data-active="true"] {
-  color: blue;
+.stars--three i:nth-child(5){
+  color: grey;
+}
+
+.stars--four i:nth-child(5){
+  color: grey;
 }
 
 /* GRID Activité */
@@ -555,4 +555,14 @@ footer {
   .card-hebergement {
     width: 300px;
   }
+}
+
+
+
+
+
+
+.card-test{
+  background: #fff;
+  display: flex;
 }
