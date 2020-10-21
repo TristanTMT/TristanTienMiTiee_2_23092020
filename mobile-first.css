@@ -324,6 +324,9 @@ footer {
   .card-hebergement {
     text-align: center;
   }
+  .card-hebergement .hebergement-image {
+    height: 200px;
+  }
 
   /* Footer */
 
@@ -333,7 +336,6 @@ footer {
   }
 }
 
-/* Ecran iPad Pro */
 @media screen and (min-width: 768px) and (max-width: 1000px) {
   /* Navigation */
   .container-header {
@@ -388,7 +390,6 @@ footer {
   }
 
   .card-hebergement {
-    width: 80%;
     background: white;
   }
 
@@ -399,7 +400,6 @@ footer {
 
   .card-popular {
     flex-direction: column;
-    width: 80%;
   }
 
   .card-popular-image {
@@ -500,8 +500,7 @@ footer {
   }
 
   .card-hebergement {
-    margin: 10px;
-    width: 220px;
+    width: 280px;
     background: white;
   }
 
@@ -541,13 +540,17 @@ footer {
 }
 
 /* Ecran Desktop */
-@media screen and (min-width: 1299px) {
+@media screen and (min-width: 1250px) {
 
   .filter__btn.familial{
     width: 120px;
   }
   .filter__secondRow{
     display: flex;
+  }
+
+  .aside-image{
+    padding: 0 10px 0 10px;
   }
   /* Hébergement */
   .principal {
