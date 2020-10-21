@@ -385,12 +385,16 @@ footer {
 
   /* Hébergement */
   .principal {
-    justify-content: space-evenly;
+    flex-direction: column;
   }
-
+  
+  .row-hebergement{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
   .container-hebergement {
     background: #f2f2f2;
-    width: 45%;
+    margin-top: 20px;
   }
 
   .card-hebergement {
@@ -398,8 +402,10 @@ footer {
   }
 
   /* Les plus populaires */
-  .aside-container {
-    width: 45%;
+  .aside-image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
 
   .card-popular {
