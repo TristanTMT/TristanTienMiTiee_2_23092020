@@ -13,7 +13,7 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 5px;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 img {
@@ -80,18 +80,19 @@ a {
 #container-btn {
   display: flex;
   align-items: center;
+  margin: 30px 0 30px 0;
 }
 
 #container-btn .fa-map-marker-alt {
   background: #f2f2f2;
-  padding: 10px;
+  padding: 13px;
   border-radius: 10px 0 0 10px;
 }
 
 input[type="text"] {
   font-size: 15px;
-  height: 35px;
-  border: solid 1px #f2f2f2;
+  height: 40px;
+  border: solid 2px #f2f2f2;
   font-weight: 900;
   align-items: center;
 }
@@ -100,18 +101,18 @@ input[type="text"] {
   display: none;
   background: #0065fc;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
 
 #container-btn .fa-search {
   background: #0065fc;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
 
@@ -308,17 +309,26 @@ footer {
   justify-content: center;
 }
 
+
+
 /* RESPONSIVE */
 
 /* Ecran Tablette Mini */
-@media screen and (min-width: 550px) and (max-width: 767px) {
+@media screen and (min-width: 550px) {
   /* Filtre */
-  .filter__btn {
-    margin-left: 50px;
+  #filter {
+    display: flex;
   }
-
-  /* Les plus populaires */
-  
+  .filter__firstRow button{
+    width: 150px;
+  }
+  .filter__btn.familial{
+    width: 110px;
+  }
+  .filter__secondRow {
+    display: flex;
+    justify-content: space-around;
+  }
 
   /* Hébergement */
   .row-hebergement{
@@ -333,14 +343,14 @@ footer {
     height: 200px;
   }
   /* Footer */
-
   #container-footer {
     flex-direction: row;
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+/* LAPTOP */
+@media screen and (min-width: 768px) and (max-width: 1023px){
   /* Navigation */
   .container-header {
     flex-direction: row;
@@ -366,21 +376,6 @@ footer {
   }
   .main-navbar ul:nth-child(3) {
     display: flex;
-  }
-
-  /* Filter */
-  #filter {
-    display: flex;
-  }
-  .filter__firstRow button{
-    width: 150px;
-  }
-  .filter__btn.familial{
-    width: 110px;
-  }
-  .filter__secondRow {
-    display: flex;
-    justify-content: space-around;
   }
 
   /* Hébergement */
@@ -429,15 +424,10 @@ footer {
   .card-grid .card-grid-img-box-1 {
     height: 350px;
   }
-  
-  /* Footer */
-  #container-footer {
-    flex-direction: row;
-  }
 }
 
 /* Ecran Desktop */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   /* Navigation */
   .container-header {
     flex-direction: row;
@@ -515,8 +505,10 @@ footer {
   }
 
   /* Les plus populaires */
-  .aside-container {
-    width: 35%;
+  .aside-image {
+    grid-template-columns: none;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
   }
 
   .card-popular {
@@ -541,11 +533,6 @@ footer {
   }
   .card-grid .card-grid-img-box-1 {
     height: 350px;
-  }
-
-  /* Footer */
-  #container-footer {
-    flex-direction: row;
   }
 }
 
