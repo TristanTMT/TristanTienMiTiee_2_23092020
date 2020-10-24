@@ -518,15 +518,11 @@ footer {
         background: white;
         width: 95%;
     }
-    .hebergement-image{
-        background: blue;
-    }
     /* Les plus populaires */
     .aside-container {
         border-radius: 20px;
         width: 29%;
         padding: 15px;
-        background: blue;
     }
     .card-popular {
         flex-direction: row;
