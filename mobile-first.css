@@ -259,9 +259,6 @@ input[type="text"] {
     padding: 5px 0 15px 15px;
 }
 
-.container-hebergement p {
-    padding: 20px 0 10px 0;
-}
 
 
 /* Boutons en étoile */
@@ -285,10 +282,6 @@ input[type="text"] {
 
 
 /* GRID Activité */
-
-.container-activites-marseille h2 {
-    padding: var(--margin-btween-block);
-}
 
 .card-grid {
     margin-bottom: 20px;
@@ -361,26 +354,13 @@ footer {
     .card-hebergement .hebergement-image {
         height: 150px;
     }
-    /* GRID Activité */
-    .grid-activities {
-        display: flex;
-    }
-    .card-grid {
-        margin: 10px;
-    }
-    .card-grid .card-grid-img-box-1 {
-        height: 350px;
-    }
-    /* Footer */
-    #container-footer {
-        flex-direction: row;
-    }
+    
 }
 
 
 /* LAPTOP */
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 750px) and (max-width: 1023px) {
     /* Navigation */
     .container-header {
         flex-direction: row;
@@ -447,6 +427,25 @@ footer {
     .container-activites-marseille {
         margin: 30px 0 30px 0;
     }
+    .grid-activities {
+        display: flex;
+    }
+    .card-grid {
+        margin: 5px;
+    }
+    .card-grid .card-grid-img-box-1 {
+        height: 350px;
+    }
+    .box-2 .card-grid-img-2 {
+        height: 200px;
+    }
+    .box-2 .card-grid-img-3 {
+        height: 100px;
+    }
+    /* Footer */
+    #container-footer {
+        flex-direction: row;
+    }
 }
 
 
@@ -501,52 +500,75 @@ footer {
     .principal {
         flex-direction: row-reverse;
         flex-wrap: wrap;
-        justify-content: space-evenly;
     }
-    .principal h2,
-    p {
-        padding: 15px;
+    .principal {
         flex-direction: row-reverse;
     }
     .container-hebergement {
         background: #f2f2f2;
-        width: 70%;
+        border-radius: 20px;
+        width: 69%;
+        margin: auto;
+        padding: 20px;
     }
     .row-hebergement {
         grid-template-columns: repeat(3, 1fr);
     }
     .card-hebergement {
         background: white;
-        width: 90%;
+        width: 95%;
+    }
+    .hebergement-image{
+        background: blue;
     }
     /* Les plus populaires */
-    .aside-image {
-        grid-template-columns: none;
-        grid-template-rows: 1fr;
-        grid-gap: 10px;
+    .aside-container {
+        border-radius: 20px;
+        width: 29%;
+        padding: 15px;
+        background: blue;
     }
     .card-popular {
-        flex-direction: column;
-        width: 300px;
+        flex-direction: row;
+        height: 160px
     }
     .card-popular-image {
-        width: 100%;
-        height: 175px;
-        border-radius: 20px 20px 0 0;
+        height: 170px;
+        width: 150px;
+        border-radius: 20px 0 0 20px;
     }
     /* GRID Activité */
     .container-activites-marseille {
         margin: 30px 0 30px 0;
     }
+    .box-2 .card-grid-img-2 {
+        height: 200px;
+    }
+    .box-2 .card-grid-img-3 {
+        height: 100px;
+    }
+    /* GRID ACTIVITES */
+    .container-activites-marseille {
+        margin: 30px 0 30px 0;
+    }
     .grid-activities {
         display: flex;
-        justify-content: space-evenly;
     }
     .card-grid {
-        width: 200px;
+        margin: 10px;
     }
     .card-grid .card-grid-img-box-1 {
         height: 350px;
+    }
+    .box-2 .card-grid-img-2 {
+        height: 200px;
+    }
+    .box-2 .card-grid-img-3 {
+        height: 100px;
+    }
+    /* Footer */
+    #container-footer {
+        flex-direction: row;
     }
 }
 
@@ -560,41 +582,8 @@ footer {
     .filter__secondRow {
         display: flex;
     }
-    .aside-image {
-        padding: 0 10px 0 10px;
-    }
-    /* Hébergement */
-    .container-hebergement {
-        width: 65%;
-        border-radius: 20px;
-    }
-    /* Les plus populaires */
-    .aside-container {
-        width: 30%;
-        border-radius: 20px;
-    }
-    .card-popular {
-        flex-direction: row;
-        width: 95%;
-    }
-    .card-popular-image {
-        width: 40%;
-        border-radius: 20px 0 0 20px;
-    }
     /* GRID Activité */
-    .card-grid {
-        width: 40%;
-        margin: 15px;
-    }
-    .box-2 .card-grid {
-        width: 90%;
-    }
-    .box-2 .card-grid-img-2 {
-        height: 200px;
-    }
-    .box-2 .card-grid-img-3 {
-        height: 100px;
-    }
+    
     /* Footer */
     #container-footer ul {
         padding-right: 250px;
