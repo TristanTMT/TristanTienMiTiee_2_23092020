@@ -16,7 +16,7 @@
 body {
     font-family: "Raleway", sans-serif;
     margin: 0 5px 5px 5px;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 img {
@@ -256,7 +256,7 @@ input[type="text"] {
 }
 
 .card-body {
-    padding: 5px 0 15px 15px;
+    padding: 5px 0 15px 5px;
 }
 
 
@@ -360,7 +360,7 @@ footer {
 
 /* LAPTOP */
 
-@media screen and (min-width: 750px) and (max-width: 1023px) {
+@media screen and (min-width: 750px) {
     /* Navigation */
     .container-header {
         flex-direction: row;
@@ -377,9 +377,11 @@ footer {
         align-items: center;
         border-bottom: none;
     }
+    .main-navbar ul {
+        border-bottom: none;
+    }
     .main-navbar li {
         margin-left: 100px;
-        border-bottom: none;
     }
     .main-navbar li:nth-child(1) {
         border-top: 3px solid #0065fc;
@@ -465,6 +467,9 @@ footer {
         align-items: center;
         border-bottom: none;
     }
+    .main-navbar ul {
+        border-bottom: none;
+    }
     .main-navbar li {
         margin-left: 100px;
     }
@@ -524,16 +529,14 @@ footer {
         width: 29%;
         padding: 15px;
     }
-    .card-popular {
-        flex-direction: row;
-        height: 160px
-    }
-    .card-popular-image {
-        height: 170px;
-        width: 150px;
-        border-radius: 20px 0 0 20px;
+    .aside-image{
+        grid-template-columns: 1fr;
     }
     /* GRID Activité */
+    
+    .grid-activities {
+        display: flex;
+    }
     .container-activites-marseille {
         margin: 30px 0 30px 0;
     }
@@ -543,18 +546,13 @@ footer {
     .box-2 .card-grid-img-3 {
         height: 100px;
     }
-    /* GRID ACTIVITES */
-    .container-activites-marseille {
-        margin: 30px 0 30px 0;
-    }
-    .grid-activities {
-        display: flex;
-    }
+    
     .card-grid {
         margin: 10px;
     }
     .card-grid .card-grid-img-box-1 {
         height: 350px;
+        width: 550px;
     }
     .box-2 .card-grid-img-2 {
         height: 200px;
