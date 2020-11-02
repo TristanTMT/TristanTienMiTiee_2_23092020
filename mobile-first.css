@@ -64,10 +64,10 @@ button{
     display: flex;
     justify-content: space-around;
     border-bottom: 3px solid #f2f2f2;
+    padding: 1rem;
 }
 
 .main-navbar li:nth-child(1) {
-    border-bottom: 3px solid #0065fc;
     color: #0065fc;
 }
 
@@ -196,14 +196,14 @@ input[type="text"] {
 
 .aside-container {
     background: #f2f2f2;
-    padding: 1rem;
+    padding: 2rem 1rem 2rem 1rem;
 }
 
-.popular-and-chart {
+.popular-and-chart { /*H2 populaire*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .popular-and-chart i {
@@ -239,8 +239,11 @@ input[type="text"] {
     flex-wrap: wrap;
 }
 
+.container-hebergement{
+    margin-top: 2rem;
+}
 .container-hebergement > h2{
-    padding: 1rem 0 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .row-hebergement {
@@ -286,8 +289,11 @@ input[type="text"] {
 
 /* GRID Activité */
 
+.container-activites-marseille {
+    margin-top: 2rem;
+}
 .container-activites-marseille > h2 {
-    padding: 1rem 0 1rem 0;
+    padding-bottom: 1rem;
 }
 
 .card-grid {
@@ -432,8 +438,7 @@ footer {
     .container-hebergement {
         background: #f2f2f2;
         margin-top: 20px;
-        
-        padding: 1rem;
+        padding: 2rem;
     }
     .card-hebergement {
         background: white;
@@ -451,12 +456,13 @@ footer {
         border-radius: 20px 0 0 20px;
         height: 150px;
     }
+    
     /* GRID ACTIVITES */
     .grid-activities {
         display: flex;
     }
     .card-grid {
-        margin: 10px;
+        margin-right: 0.5rem;
     }
     .card-grid .card-grid-img-box-1 {
         height: 300px;
@@ -466,12 +472,13 @@ footer {
         height: 155px;
     }
     .box-2 .card-grid-img-3 {
-        height: 90px;
+        height: 80px;
     }
     .box-2 .card-grid-img-4 {
-        height: 125px;
+        height: 115px;
         width: 750px;
     }
+    
     /* Footer */
     #container-footer {
         flex-direction: row;
@@ -547,11 +554,11 @@ footer {
     .aside-image {
         grid-template-columns: 1fr;
     }
-    /* GRID Activité */
-    .container-activites-marseille {
+
+
+    .container-activites-marseille{
         padding: 1rem;
     }
-
     
     #container-footer ul {
         padding-right: 250px;
