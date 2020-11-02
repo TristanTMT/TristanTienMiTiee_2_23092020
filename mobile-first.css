@@ -196,7 +196,7 @@ input[type="text"] {
 
 .aside-container {
     background: #f2f2f2;
-    padding: 0 1rem 2rem 1rem;
+    padding: 1rem;
 }
 
 .popular-and-chart {
@@ -207,7 +207,7 @@ input[type="text"] {
 }
 
 .popular-and-chart i {
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .card-popular {
@@ -215,13 +215,13 @@ input[type="text"] {
     background: white;
     margin-bottom: 1rem;
     border-radius: 20px;
+    height: 140px;
     box-shadow: var(--boxShadowCard);
 }
 
 .card-popular-image {
     padding: 3px;
     width: 38%;
-    height: 130px;
     border-radius: 20px 0 0 20px;
 }
 
@@ -246,7 +246,6 @@ input[type="text"] {
 .row-hebergement {
     display: grid;
     grid-template-columns: 1fr;
-    align-self: center;
 }
 
 .card-hebergement {
@@ -433,6 +432,8 @@ footer {
     .container-hebergement {
         background: #f2f2f2;
         margin-top: 20px;
+        
+        padding: 1rem;
     }
     .card-hebergement {
         background: white;
@@ -458,17 +459,17 @@ footer {
         margin: 10px;
     }
     .card-grid .card-grid-img-box-1 {
-        height: 350px;
+        height: 300px;
         width: 600px;
     }
     .box-2 .card-grid-img-2 {
-        height: 185px;
+        height: 155px;
     }
     .box-2 .card-grid-img-3 {
-        height: 110px;
+        height: 90px;
     }
     .box-2 .card-grid-img-4 {
-        height: 145px;
+        height: 125px;
         width: 750px;
     }
     /* Footer */
@@ -531,17 +532,12 @@ footer {
         flex-wrap: wrap;
     }
     .container-hebergement {
-        background: #f2f2f2;
         border-radius: 20px;
         width: 70%;
         margin: auto;
-        padding: 30px;
     }
     .row-hebergement {
         grid-template-columns: repeat(3, 1fr);
-    }
-    .card-hebergement {
-        background: white;
     }
     /* Les plus populaires */
     .aside-container {
@@ -553,26 +549,10 @@ footer {
     }
     /* GRID Activité */
     .container-activites-marseille {
-        padding: 10px;
+        padding: 1rem;
     }
-    /* Footer */
-    #container-footer {
-        flex-direction: row;
-    }
-}
 
-
-/* Ecran Desktop */
-
-@media screen and (min-width: 1250px) {
-    .filter__btn.familial {
-        width: 120px;
-    }
-    .filter__secondRow {
-        display: flex;
-    }
-    /* GRID Activité */
-    /* Footer */
+    
     #container-footer ul {
         padding-right: 250px;
     }
