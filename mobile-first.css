@@ -556,7 +556,7 @@ footer {
     /* Les plus populaires */
     .aside-container {
         border-radius: 20px;
-        width: 29%;
+        width: 25%;
     }
     .aside-image {
         grid-template-columns: 1fr;
