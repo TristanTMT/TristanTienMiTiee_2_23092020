@@ -39,7 +39,7 @@ p {
     margin: 5px 0 5px 0;
 }
 
-button{
+button {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
 }
@@ -62,13 +62,19 @@ button{
 
 .main-navbar ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.main-navbar ul .navbar {
     border-bottom: 3px solid #f2f2f2;
-    padding: 1rem 0 1rem 0;
+    padding: 1rem;
+    width: 50%;
+    text-align: center;
 }
 
 .main-navbar li:nth-child(1) {
     color: #0065fc;
+    border-bottom: blue 2px solid;
 }
 
 .main-navbar li:nth-child(3) {
@@ -199,7 +205,8 @@ input[type="text"] {
     padding: 2rem 1rem 2rem 1rem;
 }
 
-.popular-and-chart { /*H2 populaire*/
+.popular-and-chart {
+    /*H2 populaire*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -239,10 +246,11 @@ input[type="text"] {
     flex-wrap: wrap;
 }
 
-.container-hebergement{
+.container-hebergement {
     margin-top: 2rem;
 }
-.container-hebergement > h2{
+
+.container-hebergement>h2 {
     padding-bottom: 1rem;
 }
 
@@ -268,7 +276,9 @@ input[type="text"] {
     padding: 5px 15px 5px 10px;
 }
 
+
 /* Boutons en étoile */
+
 .container-star-rating {
     display: flex;
     color: #0065fc;
@@ -292,7 +302,8 @@ input[type="text"] {
 .container-activites-marseille {
     margin-top: 2rem;
 }
-.container-activites-marseille > h2 {
+
+.container-activites-marseille>h2 {
     padding-bottom: 1rem;
 }
 
@@ -364,14 +375,12 @@ footer {
     }
 }
 
-@media screen and (min-width: 580px) and (max-width: 749px){
+@media screen and (min-width: 580px) and (max-width: 749px) {
     /* Les plus populaires */
-
     .aside-container {
         padding: 2rem 4rem 2rem 4rem;
     }
 }
-
 
 
 /* LAPTOP */
@@ -386,9 +395,6 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
-    .logo {
-        padding-top: 50px;
-    }
     .logo a {
         display: none;
     }
@@ -396,11 +402,14 @@ footer {
         align-items: center;
         border-bottom: none;
     }
-    .main-navbar ul {
+    .main-navbar ul .navbar {
         border-bottom: none;
+        padding: 1rem;
+        width: 50%;
+        text-align: center;
     }
     .main-navbar li {
-        margin-left: 100px;
+        margin-left: 50px;
     }
     .main-navbar li:nth-child(1) {
         border-top: 3px solid #0065fc;
@@ -408,9 +417,6 @@ footer {
     }
     .main-navbar li:nth-child(3) {
         display: flex;
-    }
-    .navbar {
-        padding-top: 50px;
     }
     /* Filtre */
     .filter__row {
@@ -456,7 +462,6 @@ footer {
         border-radius: 20px 0 0 20px;
         height: 150px;
     }
-    
     /* GRID ACTIVITES */
     .grid-activities {
         display: flex;
@@ -478,7 +483,6 @@ footer {
         height: 115px;
         width: 750px;
     }
-    
     /* Footer */
     #container-footer {
         flex-direction: row;
@@ -554,12 +558,9 @@ footer {
     .aside-image {
         grid-template-columns: 1fr;
     }
-
-
-    .container-activites-marseille{
+    .container-activites-marseille {
         padding: 1rem;
     }
-    
     #container-footer ul {
         padding-right: 250px;
     }
