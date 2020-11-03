@@ -5,7 +5,6 @@
     --borderRadiusCard: 15px;
 }
 
-
 /* Global */
 
 * {
@@ -102,7 +101,7 @@ button {
 
 #container-btn {
     display: flex;
-    margin: 2rem 0rem 2rem 0rem;
+    margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
 #container-btn .fa-map-marker-alt {
@@ -230,9 +229,9 @@ input[type="text"] {
     display: flex;
     background: white;
     margin-bottom: 1rem;
-    border-radius: var(--borderRadiusCard);
+    border-radius: 15px;
     height: 140px;
-    box-shadow: var(--boxShadowCard);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card-popular-image {
@@ -270,8 +269,8 @@ input[type="text"] {
 
 .card-hebergement {
     margin-bottom: 1rem;
-    border-radius: var(--borderRadiusCard);
-    box-shadow: var(--boxShadowCard);
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card-hebergement .hebergement-image {
@@ -320,7 +319,7 @@ input[type="text"] {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     max-width: 100%;
-    box-shadow: var(--boxShadowCard);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card-grid img {
@@ -459,9 +458,6 @@ footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
-    }
-    .card-popular {
-        flex-direction: flex;
     }
     .card-popular-image {
         border-radius: 20px 0 0 20px;
