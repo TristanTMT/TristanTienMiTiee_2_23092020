@@ -100,19 +100,21 @@ button {
 #container-btn {
     display: flex;
     align-items: center;
-    margin: 30px 0 30px 0;
+    margin: 1rem 0rem 1rem 0rem;
+    cursor: pointer;
 }
 
 #container-btn .fa-map-marker-alt {
     background: #f2f2f2;
-    padding: 16px;
+    padding: 1.2rem;
     border-radius: 10px 0 0 10px;
 }
 
 input[type="text"] {
+    font-family: "Raleway", sans-serif;
     border: solid 2px #f2f2f2;
     font-weight: 800;
-    padding: 12px;
+    padding: 0.9rem;
     align-items: center;
 }
 
@@ -120,19 +122,17 @@ input[type="text"] {
     display: none;
     background: #0065fc;
     color: #fff;
-    padding: 15px;
+    padding: 1.2rem;
     border: none;
     border-radius: 0 10px 10px 0;
-    cursor: pointer;
 }
 
 #container-btn .fa-search {
     background: #0065fc;
     color: #fff;
-    padding: 15px;
+    padding: 1.2rem;
     border: none;
     border-radius: 0 10px 10px 0;
-    cursor: pointer;
 }
 
 
@@ -150,13 +150,13 @@ input[type="text"] {
 
 .filter__btn {
     background: white;
-    width: 200px;
+    width: 180px;
     border: 3px solid #f2f2f2;
     border-radius: 30px;
     align-items: center;
     display: flex;
     cursor: pointer;
-    margin: 0 10px 10px 0;
+    margin: 0 20px 10px 0;
     transform: scale(1);
     transition: transform 800ms;
 }
@@ -177,6 +177,10 @@ input[type="text"] {
 
 .filter__btn.romantique {
     width: 150px;
+}
+
+.filter__btn.economique {
+    width: 160px;
 }
 
 
@@ -380,6 +384,9 @@ footer {
     .aside-container {
         padding: 2rem 4rem 2rem 4rem;
     }
+    .container-activites-marseille {
+        padding: 2rem 4rem 2rem 4rem;
+    }
 }
 
 
@@ -422,16 +429,12 @@ footer {
     .filter__row {
         flex-direction: row;
         display: flex;
-        flex-wrap: wrap;
     }
     .filter__row span {
         margin-right: 20px;
     }
     .filter__btn.familial {
         width: 110px;
-    }
-    .filter__btn.economique {
-        width: 150px;
     }
     /* Hébergement */
     .principal {
