@@ -1,11 +1,3 @@
-/* Variables */
-
-:root {
-    --boxShadowCard: 3px 3px 3px rgba(0, 0, 0, 0.1);
-    --borderRadiusCard: 15px;
-}
-
-
 /* Global */
 
 * {
@@ -189,7 +181,8 @@ input[type="text"]::placeholder {
 }
 
 .filter__btn.economique {
-    width: 150px;
+    width: 160px;
+    padding-right: 15px;
 }
 
 
@@ -359,11 +352,6 @@ footer {
 
 #container-footer ul li {
     padding: 5px;
-}
-
-.copy-footer {
-    display: flex;
-    justify-content: center;
 }
 
 
