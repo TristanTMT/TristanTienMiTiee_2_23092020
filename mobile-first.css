@@ -5,6 +5,7 @@
     --borderRadiusCard: 15px;
 }
 
+
 /* Global */
 
 * {
@@ -20,8 +21,6 @@ body {
 }
 
 img {
-    max-width: 100%;
-    max-height: 100%;
     object-fit: cover;
 }
 
@@ -41,10 +40,12 @@ p {
 button {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
+    outline: none;
 }
 
 
 /* Navigation */
+
 .wrapper {
     padding: 0 1rem 0 1rem;
 }
@@ -116,6 +117,10 @@ input[type="text"] {
     font-weight: 800;
     padding: 1rem;
     align-items: center;
+}
+
+input[type="text"]::placeholder {
+    color: black;
 }
 
 .research-btn {
@@ -230,20 +235,21 @@ input[type="text"] {
     background: white;
     margin-bottom: 1rem;
     border-radius: 15px;
-    height: 140px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .card-popular-image {
     padding: 3px;
-    width: 38%;
+    height: 135px;
+    width: 120px;
     border-radius: 15px 0 0 15px;
 }
 
 .card-body.card-body--spaceBetween {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 8px;
 }
 
 
@@ -274,14 +280,14 @@ input[type="text"] {
 }
 
 .card-hebergement .hebergement-image {
-    height: 120px;
+    height: 105px;
     width: 100%;
     border-radius: 15px 15px 0 0;
     padding: 3px;
 }
 
 .card-body {
-    padding: 0 15px 5px 10px;
+    padding: 5px 15px 5px 15px;
 }
 
 
@@ -323,7 +329,7 @@ input[type="text"] {
 }
 
 .card-grid img {
-    height: 120px;
+    height: 80px;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
@@ -343,7 +349,7 @@ footer {
 #container-footer {
     display: flex;
     flex-direction: column;
-    font-size: 12px;
+    padding-left: 1rem;
 }
 
 #container-footer ul {
@@ -372,7 +378,7 @@ footer {
         display: flex;
         justify-content: space-around;
     }
-    /* Hébergement */
+    /* Les plus populaires */
     .row-hebergement {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -443,7 +449,7 @@ footer {
     }
     .row-hebergement {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 10px;
+        grid-gap: 15px;
     }
     .container-hebergement {
         background: #f2f2f2;
@@ -452,6 +458,10 @@ footer {
     }
     .card-hebergement {
         background: white;
+        width: 90%;
+    }
+    .card-hebergement .hebergement-image {
+        height: 120px;
     }
     /* Les plus populaires */
     .aside-image {
@@ -460,34 +470,34 @@ footer {
         grid-gap: 10px;
     }
     .card-popular-image {
-        border-radius: 20px 0 0 20px;
-        height: 150px;
+        height: 140px;
+        width: 120px;
     }
     /* GRID ACTIVITES */
     .grid-activities {
         display: flex;
     }
     .card-grid {
-        margin-right: 1.5rem;
-    }
-    
-    .card-grid .card-grid-img-box-1 {
-        height: 320px;
-        width: 600px;
-    }
-    .box-2 .card-grid-img-2 {
-        height: 155px;
-    }
-    .box-2 .card-grid-img-3 {
-        height: 90px;
-    }
-    .box-2 .card-grid-img-4 {
-        height: 120px;
-        width: 750px;
+        margin-left: 1rem;
     }
     /* Footer */
     #container-footer {
         flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1098px) {
+    .card-grid .card-grid-img-box-1 {
+        height: 260px;
+    }
+    .box-2 {
+        width: 1000px;
+    }
+    .box-2 .card-grid-img-2 {
+        height: 100px;
+    }
+    .box-2 .card-grid-img-4 {
+        height: 90px;
     }
 }
 
@@ -560,8 +570,27 @@ footer {
     .aside-image {
         grid-template-columns: 1fr;
     }
+    .card-popular-image {
+        height: 130px;
+        width: 120px;
+    }
+    /* GRID ACTIVITES */
     .container-activites-marseille {
-        padding: 1rem;
+        padding: 2rem;
+    }
+    .card-grid .card-grid-img-box-1 {
+        height: 260px;
+        width: 250px;
+    }
+    .box-2 {
+        width: 300px;
+        margin: 0 30px 0 30px;
+    }
+    .box-2 .card-grid-img-2 {
+        height: 100px;
+    }
+    .box-2 .card-grid-img-4 {
+        height: 90px;
     }
     #container-footer ul {
         padding-right: 250px;
