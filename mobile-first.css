@@ -8,7 +8,7 @@
 
 body {
     font-family: "Raleway", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     max-width: 100%;
 }
 
@@ -228,7 +228,7 @@ input[type="text"]::placeholder {
     background: white;
     margin-bottom: 1rem;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-popular-image {
@@ -242,7 +242,8 @@ input[type="text"]::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 8px;
+    padding: 10px 5px 10px 5px;
+    width: 100%;
 }
 
 
@@ -269,7 +270,7 @@ input[type="text"]::placeholder {
 .card-hebergement {
     margin-bottom: 1rem;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-hebergement .hebergement-image {
@@ -318,7 +319,7 @@ input[type="text"]::placeholder {
     margin-bottom: 1.5rem;
     border-radius: 10px;
     max-width: 100%;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.2);
 }
 
 .card-grid img {
@@ -328,7 +329,7 @@ input[type="text"]::placeholder {
 }
 
 .card-grid .card-body {
-    padding: 10px 0 0 15px;
+    padding: 15px 0 0 10px;
     height: 50px;
 }
 
@@ -357,8 +358,11 @@ footer {
 
 /* RESPONSIVE */
 
-
-/* Ecran Tablette Mini */
+@media screen and (min-width: 350px) {
+    .filter__btn.familial {
+        width: 120px;
+    }
+}
 
 @media screen and (min-width: 580px) {
     /* Filtre */
@@ -374,6 +378,13 @@ footer {
     }
     .card-hebergement .hebergement-image {
         height: 140px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width:579px) {
+    /* Filtre */
+    .filter__firstRow {
+        margin-top: 1rem;
     }
 }
 
@@ -427,9 +438,6 @@ footer {
     }
     .filter__row span {
         margin-right: 10px;
-    }
-    .filter__btn.familial {
-        width: 110px;
     }
     /* Hébergement */
     .principal {
@@ -554,6 +562,7 @@ footer {
     .aside-container {
         border-radius: 20px;
         width: 29.5%;
+        margin-left: 10px;
     }
     .aside-image {
         grid-template-columns: 1fr;
