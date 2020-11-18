@@ -476,6 +476,13 @@ footer {
     }
     .card-grid {
         margin-left: 1rem;
+        width: 100%;
+    }
+    .box-2 .card-grid {
+        width: 100%;
+    }
+    .box-2 {
+        margin: 0 30px 0 30px;
     }
     /* Footer */
     #container-footer {
@@ -578,14 +585,6 @@ footer {
     }
     .card-grid .card-grid-img-box-1 {
         height: 265px;
-        width: 250px;
-    }
-    .box-2 {
-        width: 300px;
-        margin: 0 30px 0 30px;
-    }
-    .box-2 .card-grid-img-2 {
-        height: 100px;
     }
     .box-2 .card-grid-img-3 {
         height: 85px;
@@ -593,7 +592,14 @@ footer {
     .box-2 .card-grid-img-4 {
         height: 90px;
     }
+    /* Footer */
     #container-footer ul {
         padding-right: 250px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .aside-container {
+        padding: 2rem;
     }
 }
