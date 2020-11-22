@@ -15,21 +15,23 @@ body {
 img {
     object-fit: cover;
     object-position: 50% 45%;
+    max-width: 100%;
 }
 
 ul li {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 p {
     margin: 5px 0 5px 0;
 }
 
+p,
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: inherit;
+}
 button {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
@@ -43,41 +45,47 @@ button {
     padding: 0 1rem 0 1rem;
 }
 
-.container-header {
-    display: flex;
-    flex-direction: column;
+header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+header p:first-of-type {
+	grid-column: 1/2;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #0065fc;
-    font-weight: 900;
+header nav {
+	grid-column: 2/3;
+	display: flex;
+	justify-self: end;
+}
+header p:last-of-type {
+	grid-column: 3/4;
 }
 
-.main-navbar ul {
-    display: flex;
-    justify-content: space-between;
+header nav p,
+#inscrip {
+	margin: 0;
+	padding: 30px 15px 0px 15px;
+}
+header nav a {
+	font-weight: 300;
+}
+#inscrip a {
+	color: #0065fc;
+	font-weight: 700;
 }
 
-.main-navbar ul .navbar {
-    border-bottom: 3px solid #f2f2f2;
-    padding: 1rem;
-    width: 50%;
-    text-align: center;
+header nav p:hover {
+	border-top: solid;
+	border-color: #0065fc;
 }
 
-.main-navbar li:nth-child(1) {
-    color: #0065fc;
-    border-bottom: blue 2px solid;
+header nav p:hover a {
+	color: #0065fc;
 }
 
-.main-navbar li:nth-child(3) {
-    display: none;
-    color: #0065fc;
-    font-weight: 900;
-}
+
+
 
 
 /* Title */
@@ -100,7 +108,7 @@ button {
 
 #container-btn .fa-map-marker-alt {
     background: #f2f2f2;
-    padding: 1rem;
+    padding: 1.2rem;
     border-radius: 10px 0 0 10px;
     display: flex;
     align-items: center;
@@ -128,7 +136,7 @@ input[type="text"]::placeholder {
     border: none;
     border-radius: 0 10px 10px 0;
     cursor: pointer;
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -150,17 +158,22 @@ input[type="text"]::placeholder {
     margin: 10px 0 10px 0;
     align-items: center;
 }
+.filter__row h3 {
+    margin-right: 2rem;
+    font-weight: bold;
+}
 
 .filter__firstRow {
     display: flex;
     justify-content: space-around;
+    margin-right: 1rem;
 }
 
 .filter__btn {
     background: white;
     width: 180px;
     border: 3px solid #f2f2f2;
-    border-radius: 30px;
+    border-radius: 25px;
     align-items: center;
     display: flex;
     cursor: pointer;
@@ -178,18 +191,24 @@ input[type="text"]::placeholder {
     background: #deebff;
     text-align: center;
     border: solid 2px #f2f2f2;
-    padding: 10px;
-    margin-right: 15px;
+    padding: 15px;
     color: #0065fc;
+    position: relative;
+    left: -10px;
 }
 
 .filter__btn.romantique {
     width: 150px;
+    margin-right: 1rem;
 }
 
 .filter__btn.economique {
     width: 160px;
     padding-right: 15px;
+    margin-right: 1rem;
+}
+.filter__btn.familial {
+    width: 125px;
 }
 
 
@@ -215,7 +234,7 @@ input[type="text"]::placeholder {
 
 .aside-container {
     background: #f2f2f2;
-    padding: 2rem 1rem 2rem 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     width: 100%;
 }
 
@@ -264,6 +283,7 @@ input[type="text"]::placeholder {
 
 .container-hebergement {
     margin-top: 2rem;
+    width: 100%;
 }
 
 .container-hebergement>h2 {
@@ -314,33 +334,32 @@ input[type="text"]::placeholder {
 
 
 /* GRID Activité */
-
-.container-activites-marseille {
-    margin-top: 2rem;
+#grid-activite h2{
+    margin-top: 1rem;
+}
+#grid-activite h2{
+    margin-bottom: 1rem;
+}
+#cardGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
 }
 
-.container-activites-marseille>h2 {
-    padding-bottom: 1rem;
-}
-
-.card-grid {
-    margin-bottom: 1.5rem;
-    border-radius: 10px;
-    max-width: 100%;
+#cardGrid figure{
+    background: white;
+    margin-bottom: 1rem;
+    border-radius: 15px;
     box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.2);
 }
-
-.card-grid img {
-    height: 100px;
+#cardGrid figure img{
+    height: 115px;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
-
-.card-grid .card-body {
-    padding: 15px 0 0 10px;
-    height: 50px;
+#cardGrid figure figcaption{
+    padding: 1rem;
 }
-
 
 /* Footer */
 
@@ -366,11 +385,6 @@ footer {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 350px) {
-    .filter__btn.familial {
-        width: 120px;
-    }
-}
 
 @media screen and (min-width: 580px) {
     /* Filtre */
@@ -388,7 +402,45 @@ footer {
         height: 140px;
     }
 }
+@media all and (max-width: 599px) {
+	main {
+		width: 100%;
+		margin: 0;
+	}
 
+	header {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	header p:first-of-type {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		padding-left: 15px;
+	}
+
+	header nav {
+		grid-column: 1/3;
+		grid-row: 2/3;
+		justify-self: stretch;
+	}
+	header nav p {
+		width: 50%;
+		text-align: center;
+		padding: 5px 0px 10px 0px;
+		border-bottom: solid #f2f2f2;
+	}
+	header p:last-of-type {
+		grid-column: 2/3;
+		grid-row: 1/2;
+		justify-self: end;
+	}
+
+	header nav p:hover {
+		border-top: none;
+		border-bottom: solid #0065fc;
+    }
+}
 @media screen and (min-width: 320px) and (max-width:579px) {
     /* Filtre */
     .filter__firstRow {
@@ -399,10 +451,7 @@ footer {
 @media screen and (min-width: 580px) and (max-width: 749px) {
     /* Les plus populaires */
     .aside-container {
-        padding: 2rem 4rem 2rem 4rem;
-    }
-    .container-activites-marseille {
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 2rem 1rem 1rem 1rem;
     }
 }
 
@@ -478,40 +527,79 @@ footer {
         width: 120px;
     }
     /* GRID ACTIVITES */
-    .grid-activities {
-        display: flex;
-    }
-    .card-grid {
-        margin-left: 1rem;
-        width: 100%;
-    }
-    .box-2 .card-grid {
-        width: 100%;
-    }
-    .box-2 {
-        margin: 0 30px 0 30px;
-    }
+#grid-activite {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	padding: 1rem;
+}
+#cardGrid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: 200px 40px 40px 170px;
+	column-gap: 40px;
+	row-gap: 0px;
+	margin: 0;
+	padding: 25px 0 0 0;
+}
+#cardGrid a:nth-child(1) {
+	grid-column: 1/2;
+	grid-row: 1/5;
+}
+#cardGrid a:nth-child(2) {
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+#cardGrid a:nth-child(3) {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+#cardGrid a:nth-child(4) {
+	grid-column: 3/4;
+	grid-row: 1/5;
+}
+#carteact a:nth-child(5) {
+	grid-column: 4/5;
+	grid-row: 1/2;
+}
+#cardGrid a:nth-child(6) {
+	grid-column: 4/5;
+	grid-row: 3/5;
+}
+
+#grid-activite figure {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
+	box-shadow: 0px 2px 10px #c4c4c4;
+	display: flex;
+	flex-direction: column;
+}
+#grid-activite figure img {
+	width: 100%;
+	height: calc(100% - 58px);
+	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+#grid-activite figcaption {
+	height: 58px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#grid-activite h4 {
+	padding-right: 20px;
+}
+/* #endregion */
     /* Footer */
     #container-footer {
         flex-direction: row;
     }
 }
-
-@media screen and (min-width: 750px) and (max-width: 1098px) {
-    .card-grid .card-grid-img-box-1 {
-        height: 260px;
-    }
-    .box-2 {
-        width: 1000px;
-    }
-    .box-2 .card-grid-img-3 {
-        height: 85px;
-    }
-    .box-2 .card-grid-img-4 {
-        height: 90px;
-    }
-}
-
 
 /* Ecran Desktop */
 
@@ -586,27 +674,21 @@ footer {
         height: 130px;
         width: 120px;
     }
-    /* GRID ACTIVITES */
-    .container-activites-marseille {
-        padding: 2rem;
-    }
-    .card-grid .card-grid-img-box-1 {
-        height: 265px;
-    }
-    .box-2 .card-grid-img-3 {
-        height: 85px;
-    }
-    .box-2 .card-grid-img-4 {
-        height: 90px;
-    }
     /* Footer */
     #container-footer ul {
         padding-right: 250px;
     }
 }
 
-@media screen and (min-width: 1440px){
-    .aside-container {
-        padding: 2rem;
-    }
+
+
+/* Mediaqueries for smaller desktops/laptops and large tablets (landscape) */
+@media all and (max-width: 1440px) {
+	#cardGrid {
+		column-gap: 30px;
+	}
 }
+
+
+
+

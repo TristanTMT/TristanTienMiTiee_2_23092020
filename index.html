@@ -15,19 +15,14 @@
 
 <body>
     <div class="wrapper">
-        <header class="container-header">
-            <nav class="logo">
-                <img src="images/logo/Reservia.svg" alt="Logo Réservia " />
-                <a class="item" href="#">S'inscrire</a>
-            </nav>
+        <header>
+            <p><img src="images/logo/Reservia.svg" alt="Logo Reservia" /></p>
 
-            <nav class="main-navbar">
-                <ul>
-                    <li class="navbar"><a href="#main">Hébergements</a></li>
-                    <li class="navbar"><a href="#activity">Activités</a></li>
-                    <li class="navbar"><a href="#">S'inscrire</a></li>
-                </ul>
+            <nav>
+                <p class="border-bottom"><a href="#hebergement">Hébergements</a></p>
+                <p><a href="#activite"> Activités</a></p>
             </nav>
+            <p id="inscrip"><a href="#">S'inscrire</a></p>
         </header>
 
         <!-- Section Title -->
@@ -40,16 +35,16 @@
             </div>
 
             <!-- Section Bouton de recherche -->
-            <div id="container-btn">
-                <i class="fas fa-map-marker-alt"></i>
-                <input type="text" placeholder="Marseille, France" />
-                <button class="research-btn">Rechercher</button>
-                <i class="fas fa-search"></i>
-            </div>
+            <form action="" method="POST" id="container-btn">
+                <label for="city"><i class="fas fa-map-marker-alt"></i></label>
+                <input id="city" type="text" placeholder="Marseille, France" />
+                <button type="submit" class="research-btn">Rechercher</button>
+                <i type="submit" class="fas fa-search"></i>
+            </form>
 
             <!-- Section Filtre -->
             <div class="filter__row">
-                <span><strong>Filtres</strong></span>
+                <h3>Filtres</h3>
                 <div class="filter__firstRow">
                     <button class="filter__btn economique">
                       <i class="fas fa-money-bill-wave"></i>
@@ -270,74 +265,87 @@
                             </figure>
                         </a>
                     </article>
-                    <p><strong>Afficher plus</strong></p>
+                    <h3><a href="#">Afficher plus</a></h3>
                 </div>
             </section>
             <!-- END -->
         </main>
 
-        <!-- Section Activités à Marseille  -->
-        <section id="activity" class="container-activites-marseille">
-            <h2>Activités à Marseille</h2>
-            <div class="grid-activities">
-                <a href="#">
-                    <figure class="card-grid">
-                        <img class="card-grid-img-box-1" src="images/activites/4_small/vieux_port.jpg" alt="Vieux Port" />
-                        <figcaption class="card-body">
-                            <h3>Vieux Port</h3>
-                        </figcaption>
-                    </figure>
-                </a>
+        
 
-                <div class="box-2">
-                    <a href="#">
-                        <figure class="card-grid">
-                            <img class="card-grid-img-2" src="images/activites/4_small/fort_de_pomègues.jpg" alt="Fort de Pomègues" />
-                            <figcaption class="card-body">
-                                <h3>Fort de Pomègues</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure class="card-grid">
-                            <img class="card-grid-img-3" src="images/activites/4_small/iles_du_frieul.jpg" alt="Iles du Frioul" />
-                            <figcaption class="card-body">
-                                <h3>Iles du Frioul</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-                <a href="#">
-                    <figure class="card-grid">
-                        <img class="card-grid-img-box-1" src="images/activites/4_small/parc_national_des_calanques.jpg" alt="Parc National des Calanques" />
-                        <figcaption class="card-body">
-                            <h3>Parc National des Calanques</h3>
-                        </figcaption>
-                    </figure>
-                </a>
-
-                <div class="box-2">
-                    <a href="#">
-                        <figure class="card-grid">
-                            <img class="card-grid-img-4" src="images/activites/4_small/notre_dame_de_la_garde.jpg" alt="Notre-Dame-de-la-Garde" />
-                            <figcaption class="card-body">
-                                <h3>Notre-Dame-de-la-Garde</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                    <a href="#">
-                        <figure class="card-grid">
-                            <img class="card-grid-img-4" src="images/activites/4_small/parc_longchamp.jpg" alt="Parc Longchamp" />
-                            <figcaption class="card-body">
-                                <h3>Parc Longchamp</h3>
-                            </figcaption>
-                        </figure>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </div>
-    <!-- END -->
+    <!--Test-->
+    <section id="grid-activite">
+        <h2>Activités à Marseille</h2>
+        <div id="cardGrid">
+            <a href="#">
+                <figure>
+                    <img
+                        src="images/activites/4_small/vieux_port.jpg"
+                        alt="Vieux Port"
+                    />
+                    <figcaption>
+                        <h4>Vieux Port</h4>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img
+                        src="./images/activites/4_small/fort_de_pomègues.jpg"
+                        alt="Fort de Pomègues"
+                    />
+                    <figcaption>
+                        <h4>Fort de Pomègues</h4>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img
+                        src="./images/activites/4_small/iles_du_frieul.jpg"
+                        alt="Iles du Frioul"
+                    />
+                    <figcaption>
+                        <h4>Îles du Frioul</h4>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img
+                        src="./images/activites/4_small/parc_national_des_calanques.jpg"
+                        alt="Parc National des Calanques"
+                    />
+                    <figcaption>
+                        <h4>Parc National des Calanques</h4>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img
+                        src="./images/activites/4_small/notre_dame_de_la_garde.jpg"
+                        alt="Notre-Dame-de-la-Garde"
+                    />
+                    <figcaption>
+                        <h4>Notre-Dame-de-la-Garde</h4>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="#">
+                <figure>
+                    <img
+                        src="./images/activites/4_small/parc_longchamp.jpg"
+                        alt="Parc Longchamp"
+                    />
+                    <figcaption>
+                        <h4>Parc Longchamp</h4>
+                    </figcaption>
+                </figure>
+            </a>
+        </div>
+    </section>
+    <!--Fin-->
     <footer id="container-footer">
         <div class="a-propos">
             <ul>
