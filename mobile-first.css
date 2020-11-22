@@ -272,8 +272,6 @@ input[type="text"]::placeholder {
     padding: 10px 5px 10px 5px;
     width: 100%;
 }
-
-
 /* Hébergement */
 
 .principal {
@@ -312,7 +310,6 @@ input[type="text"]::placeholder {
     padding: 5px 10px 5px 10px;
 }
 
-
 /* Boutons en étoile */
 
 .container-star-rating {
@@ -336,9 +333,12 @@ input[type="text"]::placeholder {
 /* GRID Activité */
 #grid-activite h2{
     margin-top: 1rem;
-}
-#grid-activite h2{
     margin-bottom: 1rem;
+}
+
+#grid-activite h4 {
+    font-size: 14px;
+	padding-right: 20px;
 }
 #cardGrid{
     display: grid;
@@ -591,10 +591,6 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 }
-#grid-activite h4 {
-	padding-right: 20px;
-}
-/* #endregion */
     /* Footer */
     #container-footer {
         flex-direction: row;
