@@ -1,0 +1,12 @@
+header {
+    @extend %flexbox;
+    height: 50px;
+    .return{
+        margin-left: 1rem;
+    }
+    .logo{
+        height: 20px;
+        margin: auto;
+    }
+}
+

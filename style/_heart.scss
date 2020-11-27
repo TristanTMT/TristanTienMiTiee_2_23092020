@@ -1,0 +1,20 @@
+.heart {
+    & .fas.fa-heart.first {
+        position: absolute;
+        -webkit-text-stroke: black 1px;
+        color: transparent;
+        font-size: 22px;
+    }
+    & .fas.fa-heart.second {
+        position: relative;
+        color: #80216b;
+        //-webkit-text-fill-color: red;
+        -webkit-text-stroke: black 0.5px;
+        opacity: 0;
+        cursor: pointer;
+        font-size: 22px;
+        &:hover {
+            animation: fil 3s ease-in forwards;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@media (min-width: $tablet) {
+  .main {
+      padding: 0 5rem 0 5rem;
+    }
+  .background__image img {
+    height: 350px;
+    width: 350px;
+  }
+  .background__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 5rem 0;
+  }
+}
+@media (min-width: $laptop) {
+  .wrapper {
+    padding: 0 2rem 0 2rem;
+  }
+  .restaurants__popup {
+    @include absoluteOrRelative(absolute, none, none, 80%, 80%);
+}
+}
+@media (min-width: $desktop) {
+  .background__image img {
+    height: 450px;
+    width: 450px;
+  }
+  .container__menusCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+}
+
+@media (min-width: 768px){
+    .container__menusCards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+    }
+  }
